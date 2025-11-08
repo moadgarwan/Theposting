@@ -77,64 +77,37 @@
             text-align: center;
         }
 
-        .country-section {
-            margin-bottom: 15px;
-            padding: 12px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .country-section:last-child {
-            margin-bottom: 0;
-        }
-
-        .country-label {
-            font-weight: bold;
-            font-size: 1.1em;
-            margin-bottom: 8px;
+        .posts-timeline {
             display: flex;
-            align-items: center;
-        }
-
-        .country-label.france {
-            color: #0055a4;
-        }
-
-        .country-label.germany {
-            color: #000000;
-        }
-
-        .flag {
-            font-size: 1.3em;
-            margin-right: 8px;
-        }
-
-        .posts {
-            display: flex;
+            flex-direction: column;
             gap: 10px;
-            flex-wrap: wrap;
         }
 
         .post {
             background: #f0f0f0;
-            padding: 8px 15px;
-            border-radius: 20px;
+            padding: 12px 20px;
+            border-radius: 8px;
             font-size: 0.95em;
             font-weight: 600;
             color: #333;
-            border: 2px solid #ddd;
+            border-left: 4px solid #ddd;
+            transition: all 0.2s ease;
+        }
+
+        .post:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .post.france {
             background: linear-gradient(135deg, #e8f0ff 0%, #cfe2ff 100%);
-            border-color: #0055a4;
+            border-left-color: #0055a4;
             color: #0055a4;
         }
 
         .post.germany {
             background: linear-gradient(135deg, #fff9e6 0%, #ffe5b3 100%);
-            border-color: #dd0000;
+            border-left-color: #dd0000;
             color: #000000;
         }
 
@@ -165,693 +138,492 @@
                 <div class="day-header">
                     <span class="day-number">الثلاثاء، 11 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 68 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 202 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 202 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 68 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 75 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 71 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 71 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 75 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 68</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 75</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 202</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 71</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 202</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 71</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 68</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 75</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأربعاء، 12 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 44 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 39 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 39 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 44 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 150 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 39 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 39 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 150 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 44</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 150</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 39</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 39</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 39</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 39</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 44</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 150</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الخميس، 13 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 14 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 62 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 62 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 14 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 140 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 163 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 163 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 140 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 14</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 140</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 62</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 163</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 62</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 163</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 14</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 140</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الجمعة، 14 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 141 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 139 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 139 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 141 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 127 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 118 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 118 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 127 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 141</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 127</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 139</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 118</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 139</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 118</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 141</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 127</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">السبت، 15 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 70 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 82 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 82 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 70 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 130 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 43 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 43 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 130 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 70</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 130</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 82</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 43</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 82</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 43</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 70</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 130</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأحد، 16 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 73 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 69 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 69 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 73 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 143 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 33 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 33 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 143 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 73</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 143</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 69</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 33</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 69</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 33</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 73</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 143</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الاثنين، 17 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 145 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 38 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 38 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 145 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 13 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 79 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 79 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 13 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 145</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 13</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 38</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 79</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 38</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 79</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 145</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 13</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الثلاثاء، 18 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 135 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 156 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 156 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 135 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 107 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 124 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 124 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 107 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 135</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 107</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 156</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 124</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 156</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 124</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 135</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 107</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأربعاء، 19 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 122 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 113 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 113 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 122 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 114 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 175 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 175 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 114 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 122</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 114</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 113</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 175</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 113</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 175</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 122</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 114</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الخميس، 20 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 125 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 42 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 42 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 125 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 45 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 40 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 40 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 45 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 125</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 45</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 42</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 40</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 42</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 40</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 125</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 45</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الجمعة، 21 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 138 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 33 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 33 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 138 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 14 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 63 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 63 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 14 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 138</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 14</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 33</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 63</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 33</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 63</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 138</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 14</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">السبت، 22 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 13 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 77 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 77 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 13 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 147 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 144 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 144 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 147 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 13</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 147</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 77</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 144</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 77</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 144</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 13</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 147</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأحد، 23 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 103 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 119 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 119 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 103 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 72 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 84 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 84 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 72 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 103</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 72</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 119</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 84</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 119</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 84</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 103</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 72</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الاثنين، 24 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 109 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 167 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 167 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 109 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 75 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 71 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 71 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 75 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 109</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 75</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 167</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 71</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 167</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 71</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 109</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 75</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الثلاثاء، 25 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 68 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 202 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 202 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 68 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 150 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 39 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 39 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 150 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 68</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 150</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 202</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 39</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 202</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 39</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 68</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 150</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأربعاء، 26 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 44 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 39 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 39 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 44 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 140 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 163 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 163 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 140 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 44</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 140</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 39</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 163</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 39</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 163</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 44</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 140</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الخميس، 27 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 14 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 62 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 62 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 14 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 127 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 118 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 118 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 127 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 14</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 127</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 62</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 118</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 62</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 118</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 14</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 127</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الجمعة، 28 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 141 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 139 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 139 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 141 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 130 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 43 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 43 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 130 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 141</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 130</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 139</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 43</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 139</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 43</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 141</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 130</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">السبت، 29 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 70 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 82 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 82 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 70 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 143 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 33 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 33 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 143 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 70</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 143</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 82</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 33</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 82</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 33</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 70</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 143</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأحد، 30 نوفمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 73 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 69 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 69 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 73 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 13 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 79 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 79 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 13 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 73</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 13</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 69</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 79</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 69</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 79</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 73</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 13</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الاثنين، 1 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 145 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 38 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 38 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 145 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 107 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 124 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 124 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 107 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 145</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 107</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 38</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 124</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 38</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 124</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 145</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 107</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الثلاثاء، 2 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 135 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 156 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 156 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 135 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 114 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 175 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 175 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 114 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 135</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 114</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 156</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 175</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 156</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 175</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 135</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 114</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأربعاء، 3 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 122 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 113 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 113 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 122 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 45 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 40 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 40 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 45 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 122</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 45</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 113</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 40</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 113</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 40</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 122</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 45</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الخميس، 4 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 125 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 42 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 42 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 125 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 14 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 63 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 63 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 14 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 125</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 14</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 42</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 63</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 42</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 63</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 125</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 14</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الجمعة، 5 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 138 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 33 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 33 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 138 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 147 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 144 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 144 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 147 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 138</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 147</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 33</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 144</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 33</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 144</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 138</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 147</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">السبت، 6 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 13 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 77 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 77 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 13 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 72 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 84 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 84 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 72 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 13</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 72</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 77</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 84</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 77</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 84</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 13</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 72</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأحد، 7 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 103 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 119 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 119 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 103 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 75 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 71 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 71 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 75 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 103</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 75</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 119</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 71</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 119</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 71</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 103</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 75</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الاثنين، 8 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 109 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 167 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 167 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 109 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 150 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 39 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 39 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 150 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 109</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 150</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 167</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 39</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 167</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 39</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 109</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 150</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الثلاثاء، 9 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 68 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 202 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 202 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 68 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 140 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 163 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 163 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 140 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 68</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 140</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 202</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 163</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 202</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 163</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 68</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 140</span>
                 </div>
             </div>
             <div class="day-card">
                 <div class="day-header">
                     <span class="day-number">الأربعاء، 10 ديسمبر 2025</span>
                 </div>
-                <div class="country-section">
-                    <div class="country-label france">حسابات فرنسا</div>
-                    <div class="posts">
-                        <span class="post france">المنشور الأول صفحة 44 - 15:00</span>
-                        <span class="post france">الفيديو الأول صفحة 39 - 16:00</span>
-                        <span class="post france">المنشور الثاني صفحة 39 - 19:00</span>
-                        <span class="post france">الفيديو الثاني صفحة 44 - 20:00</span>
-                    </div>
-                </div>
-                <div class="country-section">
-                    <div class="country-label germany">حسابات ألمانيا</div>
-                    <div class="posts">
-                        <span class="post germany">المنشور الأول صفحة 127 - 15:20</span>
-                        <span class="post germany">الفيديو الأول صفحة 118 - 16:15</span>
-                        <span class="post germany">المنشور الثاني صفحة 118 - 19:15</span>
-                        <span class="post germany">الفيديو الثاني صفحة 127 - 20:25</span>
-                    </div>
+                <div class="posts-timeline">
+                    <span class="post france">15:00 - المنشور الأول حساب فرنسا - H. Abdulhakim - صفحة 44</span>
+                    <span class="post germany">15:15 - المنشور الأول حساب ألمانيا - Hafsa Bucher - صفحة 127</span>
+                    <span class="post france">16:00 - الفيديو الأول حساب فرنسا - Soeurs en Foi - صفحة 39</span>
+                    <span class="post germany">16:15 - الفيديو الأول حساب ألمانيا - Bessere Muslima - صفحة 118</span>
+                    <span class="post france">19:00 - المنشور الثاني حساب فرنسا - H. Abdulhakim - صفحة 39</span>
+                    <span class="post germany">19:15 - المنشور الثاني حساب ألمانيا - Hafsa Bucher - صفحة 118</span>
+                    <span class="post france">20:00 - الفيديو الثاني حساب فرنسا - Soeurs en Foi - صفحة 44</span>
+                    <span class="post germany">20:15 - الفيديو الثاني حساب ألمانيا - Bessere Muslima - صفحة 127</span>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        // Function to show only current day and next 2 days
+        function showRelevantDays() {
+            const scheduleStartDate = new Date('2025-11-11'); // Tuesday, November 11, 2025
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            scheduleStartDate.setHours(0, 0, 0, 0);
+            
+            const dayCards = document.querySelectorAll('.day-card');
+            
+            // Calculate which day of the schedule we're on
+            const diffTime = today - scheduleStartDate;
+            const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            
+            let startIndex;
+            if (diffDays < 0) {
+                // If today is before the schedule starts, show first 3 days
+                startIndex = 0;
+            } else if (diffDays >= 30) {
+                // If we're past the 30-day schedule, show last 3 days
+                startIndex = 27;
+            } else {
+                // Show current day and next 2 days
+                startIndex = diffDays;
+            }
+            
+            // Hide all cards first
+            dayCards.forEach((card, index) => {
+                if (index >= startIndex && index < startIndex + 3 && index < dayCards.length) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        // Run when page loads
+        window.addEventListener('DOMContentLoaded', showRelevantDays);
+    </script>
 </body>
 </html>
