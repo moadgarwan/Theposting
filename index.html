@@ -587,7 +587,7 @@
         </div>
     </div>
     <script>
-        // Function to show only current day and next 2 days
+        // Function to show only current day and next 6 days (7 days total)
         function showRelevantDays() {
             const scheduleStartDate = new Date('2025-11-11'); // Tuesday, November 11, 2025
             const today = new Date();
@@ -602,19 +602,19 @@
             
             let startIndex;
             if (diffDays < 0) {
-                // If today is before the schedule starts, show first 3 days
+                // If today is before the schedule starts, show first 7 days
                 startIndex = 0;
-            } else if (diffDays >= 30) {
-                // If we're past the 30-day schedule, show last 3 days
-                startIndex = 27;
+            } else if (diffDays >= 24) {
+                // If we're past day 24, show last 7 days (to avoid going beyond 30 days)
+                startIndex = 23;
             } else {
-                // Show current day and next 2 days
+                // Show current day and next 6 days (7 days total)
                 startIndex = diffDays;
             }
             
             // Hide all cards first
             dayCards.forEach((card, index) => {
-                if (index >= startIndex && index < startIndex + 3 && index < dayCards.length) {
+                if (index >= startIndex && index < startIndex + 7 && index < dayCards.length) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';
