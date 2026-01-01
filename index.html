@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>جدول نشر TikTok - 2025</title>
+    <title>جدول نشر TikTok - 2025/2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,7 @@
       body {
         font-family: 'Cairo', sans-serif;
         background-color: #f8fafc;
+        overflow-x: hidden;
       }
       ::-webkit-scrollbar {
         width: 8px;
@@ -26,9 +27,245 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #94a3b8;
       }
+      
+      /* Floating Hearts Background */
+      .hearts-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+      }
+      
+      .heart {
+        position: absolute;
+        bottom: -50px;
+        opacity: 0.35;
+        animation: floatUp linear infinite;
+      }
+      
+      .heart::before {
+        content: '❤';
+        font-size: inherit;
+        color: inherit;
+      }
+      
+      /* TASANO floating text */
+      .TASANO {
+        position: absolute;
+        bottom: -80px;
+        opacity: 0.35;
+        animation: floatUpText linear infinite;
+        font-weight: 700;
+        color: #64748b;
+        white-space: nowrap;
+      }
+      
+      .TASANO::before {
+        content: '♥';
+        margin-right: 6px;
+        color: #ef4444;
+      }
+      
+      @keyframes floatUp {
+        0% {
+          transform: translateY(0) rotate(0deg) scale(1);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.35;
+        }
+        90% {
+          opacity: 0.35;
+        }
+        100% {
+          transform: translateY(-110vh) rotate(360deg) scale(0.8);
+          opacity: 0;
+        }
+      }
+      
+      @keyframes floatUpText {
+        0% {
+          transform: translateY(0) scale(1);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.35;
+        }
+        90% {
+          opacity: 0.35;
+        }
+        100% {
+          transform: translateY(-110vh) scale(0.9);
+          opacity: 0;
+        }
+      }
+      
+      /* Different heart styles - 60 hearts */
+      .heart:nth-child(1) { left: 5%; font-size: 28px; color: #ec4899; animation-duration: 15s; animation-delay: 0s; }
+      .heart:nth-child(2) { left: 10%; font-size: 36px; color: #f43f5e; animation-duration: 18s; animation-delay: 2s; }
+      .heart:nth-child(3) { left: 15%; font-size: 24px; color: #8b5cf6; animation-duration: 12s; animation-delay: 4s; }
+      .heart:nth-child(4) { left: 20%; font-size: 40px; color: #ec4899; animation-duration: 20s; animation-delay: 1s; }
+      .heart:nth-child(5) { left: 25%; font-size: 32px; color: #06b6d4; animation-duration: 14s; animation-delay: 3s; }
+      .heart:nth-child(6) { left: 30%; font-size: 28px; color: #f43f5e; animation-duration: 16s; animation-delay: 5s; }
+      .heart:nth-child(7) { left: 35%; font-size: 44px; color: #8b5cf6; animation-duration: 19s; animation-delay: 0.5s; }
+      .heart:nth-child(8) { left: 40%; font-size: 22px; color: #ec4899; animation-duration: 13s; animation-delay: 2.5s; }
+      .heart:nth-child(9) { left: 45%; font-size: 36px; color: #06b6d4; animation-duration: 17s; animation-delay: 4.5s; }
+      .heart:nth-child(10) { left: 50%; font-size: 30px; color: #f43f5e; animation-duration: 15s; animation-delay: 1.5s; }
+      .heart:nth-child(11) { left: 55%; font-size: 40px; color: #8b5cf6; animation-duration: 18s; animation-delay: 3.5s; }
+      .heart:nth-child(12) { left: 60%; font-size: 26px; color: #ec4899; animation-duration: 14s; animation-delay: 0.8s; }
+      .heart:nth-child(13) { left: 65%; font-size: 32px; color: #06b6d4; animation-duration: 16s; animation-delay: 2.8s; }
+      .heart:nth-child(14) { left: 70%; font-size: 48px; color: #f43f5e; animation-duration: 21s; animation-delay: 4.8s; }
+      .heart:nth-child(15) { left: 75%; font-size: 28px; color: #8b5cf6; animation-duration: 13s; animation-delay: 1.8s; }
+      .heart:nth-child(16) { left: 80%; font-size: 36px; color: #ec4899; animation-duration: 17s; animation-delay: 3.8s; }
+      .heart:nth-child(17) { left: 85%; font-size: 24px; color: #06b6d4; animation-duration: 12s; animation-delay: 0.3s; }
+      .heart:nth-child(18) { left: 90%; font-size: 40px; color: #f43f5e; animation-duration: 19s; animation-delay: 2.3s; }
+      .heart:nth-child(19) { left: 95%; font-size: 30px; color: #8b5cf6; animation-duration: 15s; animation-delay: 4.3s; }
+      .heart:nth-child(20) { left: 3%; font-size: 26px; color: #ec4899; animation-duration: 14s; animation-delay: 1.3s; }
+      .heart:nth-child(21) { left: 8%; font-size: 38px; color: #06b6d4; animation-duration: 18s; animation-delay: 3.3s; }
+      .heart:nth-child(22) { left: 13%; font-size: 32px; color: #f43f5e; animation-duration: 16s; animation-delay: 5.3s; }
+      .heart:nth-child(23) { left: 23%; font-size: 26px; color: #8b5cf6; animation-duration: 13s; animation-delay: 0.7s; }
+      .heart:nth-child(24) { left: 33%; font-size: 42px; color: #ec4899; animation-duration: 20s; animation-delay: 2.7s; }
+      .heart:nth-child(25) { left: 43%; font-size: 28px; color: #06b6d4; animation-duration: 15s; animation-delay: 4.7s; }
+      .heart:nth-child(26) { left: 53%; font-size: 34px; color: #f43f5e; animation-duration: 17s; animation-delay: 1.7s; }
+      .heart:nth-child(27) { left: 63%; font-size: 24px; color: #8b5cf6; animation-duration: 12s; animation-delay: 3.7s; }
+      .heart:nth-child(28) { left: 73%; font-size: 46px; color: #ec4899; animation-duration: 22s; animation-delay: 0.2s; }
+      .heart:nth-child(29) { left: 83%; font-size: 30px; color: #06b6d4; animation-duration: 14s; animation-delay: 2.2s; }
+      .heart:nth-child(30) { left: 93%; font-size: 36px; color: #f43f5e; animation-duration: 16s; animation-delay: 4.2s; }
+      .heart:nth-child(31) { left: 2%; font-size: 34px; color: #ec4899; animation-duration: 17s; animation-delay: 6s; }
+      .heart:nth-child(32) { left: 7%; font-size: 28px; color: #8b5cf6; animation-duration: 14s; animation-delay: 7s; }
+      .heart:nth-child(33) { left: 12%; font-size: 42px; color: #06b6d4; animation-duration: 19s; animation-delay: 8s; }
+      .heart:nth-child(34) { left: 17%; font-size: 30px; color: #f43f5e; animation-duration: 15s; animation-delay: 9s; }
+      .heart:nth-child(35) { left: 22%; font-size: 38px; color: #ec4899; animation-duration: 18s; animation-delay: 10s; }
+      .heart:nth-child(36) { left: 27%; font-size: 26px; color: #8b5cf6; animation-duration: 13s; animation-delay: 6.5s; }
+      .heart:nth-child(37) { left: 32%; font-size: 44px; color: #06b6d4; animation-duration: 21s; animation-delay: 7.5s; }
+      .heart:nth-child(38) { left: 37%; font-size: 32px; color: #f43f5e; animation-duration: 16s; animation-delay: 8.5s; }
+      .heart:nth-child(39) { left: 42%; font-size: 28px; color: #ec4899; animation-duration: 14s; animation-delay: 9.5s; }
+      .heart:nth-child(40) { left: 47%; font-size: 40px; color: #8b5cf6; animation-duration: 20s; animation-delay: 10.5s; }
+      .heart:nth-child(41) { left: 52%; font-size: 24px; color: #06b6d4; animation-duration: 12s; animation-delay: 6.2s; }
+      .heart:nth-child(42) { left: 57%; font-size: 36px; color: #f43f5e; animation-duration: 17s; animation-delay: 7.2s; }
+      .heart:nth-child(43) { left: 62%; font-size: 30px; color: #ec4899; animation-duration: 15s; animation-delay: 8.2s; }
+      .heart:nth-child(44) { left: 67%; font-size: 46px; color: #8b5cf6; animation-duration: 22s; animation-delay: 9.2s; }
+      .heart:nth-child(45) { left: 72%; font-size: 28px; color: #06b6d4; animation-duration: 14s; animation-delay: 10.2s; }
+      .heart:nth-child(46) { left: 77%; font-size: 34px; color: #f43f5e; animation-duration: 16s; animation-delay: 6.8s; }
+      .heart:nth-child(47) { left: 82%; font-size: 40px; color: #ec4899; animation-duration: 19s; animation-delay: 7.8s; }
+      .heart:nth-child(48) { left: 87%; font-size: 26px; color: #8b5cf6; animation-duration: 13s; animation-delay: 8.8s; }
+      .heart:nth-child(49) { left: 92%; font-size: 38px; color: #06b6d4; animation-duration: 18s; animation-delay: 9.8s; }
+      .heart:nth-child(50) { left: 97%; font-size: 32px; color: #f43f5e; animation-duration: 15s; animation-delay: 10.8s; }
+      .heart:nth-child(51) { left: 4%; font-size: 44px; color: #ec4899; animation-duration: 20s; animation-delay: 11s; }
+      .heart:nth-child(52) { left: 14%; font-size: 28px; color: #8b5cf6; animation-duration: 14s; animation-delay: 12s; }
+      .heart:nth-child(53) { left: 24%; font-size: 36px; color: #06b6d4; animation-duration: 17s; animation-delay: 13s; }
+      .heart:nth-child(54) { left: 34%; font-size: 30px; color: #f43f5e; animation-duration: 15s; animation-delay: 11.5s; }
+      .heart:nth-child(55) { left: 44%; font-size: 42px; color: #ec4899; animation-duration: 21s; animation-delay: 12.5s; }
+      .heart:nth-child(56) { left: 54%; font-size: 26px; color: #8b5cf6; animation-duration: 13s; animation-delay: 13.5s; }
+      .heart:nth-child(57) { left: 64%; font-size: 38px; color: #06b6d4; animation-duration: 18s; animation-delay: 11.2s; }
+      .heart:nth-child(58) { left: 74%; font-size: 32px; color: #f43f5e; animation-duration: 16s; animation-delay: 12.2s; }
+      .heart:nth-child(59) { left: 84%; font-size: 48px; color: #ec4899; animation-duration: 22s; animation-delay: 13.2s; }
+      .heart:nth-child(60) { left: 94%; font-size: 28px; color: #8b5cf6; animation-duration: 14s; animation-delay: 14s; }
+      
+      /* TASANO text positions - 16 texts */
+      .TASANO:nth-child(61) { left: 7%; font-size: 18px; animation-duration: 20s; animation-delay: 1s; }
+      .TASANO:nth-child(62) { left: 27%; font-size: 22px; animation-duration: 24s; animation-delay: 6s; }
+      .TASANO:nth-child(63) { left: 47%; font-size: 16px; animation-duration: 18s; animation-delay: 3s; }
+      .TASANO:nth-child(64) { left: 67%; font-size: 20px; animation-duration: 22s; animation-delay: 8s; }
+      .TASANO:nth-child(65) { left: 87%; font-size: 17px; animation-duration: 19s; animation-delay: 5s; }
+      .TASANO:nth-child(66) { left: 17%; font-size: 21px; animation-duration: 23s; animation-delay: 10s; }
+      .TASANO:nth-child(67) { left: 57%; font-size: 19px; animation-duration: 21s; animation-delay: 12s; }
+      .TASANO:nth-child(68) { left: 77%; font-size: 18px; animation-duration: 20s; animation-delay: 14s; }
+      .TASANO:nth-child(69) { left: 3%; font-size: 20px; animation-duration: 21s; animation-delay: 16s; }
+      .TASANO:nth-child(70) { left: 22%; font-size: 17px; animation-duration: 19s; animation-delay: 18s; }
+      .TASANO:nth-child(71) { left: 37%; font-size: 22px; animation-duration: 24s; animation-delay: 15s; }
+      .TASANO:nth-child(72) { left: 52%; font-size: 18px; animation-duration: 20s; animation-delay: 17s; }
+      .TASANO:nth-child(73) { left: 72%; font-size: 21px; animation-duration: 23s; animation-delay: 19s; }
+      .TASANO:nth-child(74) { left: 92%; font-size: 16px; animation-duration: 18s; animation-delay: 20s; }
+      .TASANO:nth-child(75) { left: 12%; font-size: 19px; animation-duration: 21s; animation-delay: 22s; }
+      .TASANO:nth-child(76) { left: 82%; font-size: 20px; animation-duration: 22s; animation-delay: 24s; }
     </style>
   </head>
   <body class="text-xl">
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container">
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+      <div class="TASANO">TASANO</div>
+    </div>
+    
     <div id="root"></div>
 
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -156,10 +393,7 @@
         '109', '119', '122', '125', '135', '138', '141', '145', '156'
       ];
 
-      const BESSERE_PAGES = [
-        '114', '124', '127', '130', '140', '143', '147', '150', '163', 
-        '13', '14', '33', '45', '71', '72', '75', '84', '107'
-      ];
+
 
       const H_ABDULHAKIM_PAGES = [
         '109', '119', '122', '125', '135', '138', '141', '145', 
@@ -171,11 +405,11 @@
         '127', '130', '140', '143', '147', '150', '163'
       ];
 
-      // Generate schedule starting from FIXED date (Nov 26, 2025)
+      // Generate schedule starting from FIXED date (Nov 26, 2025) to Jan 31, 2026
       const generateSchedule = () => {
         const schedule = [];
         const startDate = new Date(FIXED_START_DATE);
-        const endDate = new Date('2025-12-31');
+        const endDate = new Date('2026-01-31');
         endDate.setHours(0,0,0,0);
 
         let currentDate = new Date(startDate);
@@ -205,7 +439,6 @@
           const muslimaIdx = postingDayIndex % MUSLIMA_PAGES.length;
           const hafsaIdx = postingDayIndex % HAFSA_PAGES.length;
           const soeursIdx = (postingDayIndex * 2) % SOEURS_PAGES.length;
-          const bessereIdx = (postingDayIndex * 2) % BESSERE_PAGES.length;
           const hAbdulIdx = postingDayIndex % H_ABDULHAKIM_PAGES.length;
           const deenIdx = postingDayIndex % DEEN_ZITATE_PAGES.length;
 
@@ -213,22 +446,18 @@
           const hContent = HAFSA_PAGES[hafsaIdx];
           const sContent1 = SOEURS_PAGES[soeursIdx];
           const sContent2 = SOEURS_PAGES[(soeursIdx + 1) % SOEURS_PAGES.length];
-          const bContent1 = BESSERE_PAGES[bessereIdx];
-          const bContent2 = BESSERE_PAGES[(bessereIdx + 1) % BESSERE_PAGES.length];
           const haContent = H_ABDULHAKIM_PAGES[hAbdulIdx];
           const dzContent = DEEN_ZITATE_PAGES[deenIdx];
 
           const items = [
             createItem(`${isoDate}-1`, '15:00', 'Post', 'France', 'Muslima Transformation', mContent.p1),
             createItem(`${isoDate}-2`, '15:15', 'Post', 'Germany', 'Hafsa Bucher', hContent.p1),
-            createItem(`${isoDate}-3`, '16:00', 'Post', 'France', 'Soeurs en Foi', sContent1),
-            createItem(`${isoDate}-4`, '16:15', 'Post', 'Germany', 'Bessere Muslima', bContent1),
+            createItem(`${isoDate}-3`, '16:00', 'Post', 'France', 'Din Avant Dounya', sContent1),
             createItem(`${isoDate}-9`, '17:00', 'Post', 'France', 'H. Abdulhakim', haContent),
             createItem(`${isoDate}-10`, '17:15', 'Post', 'Germany', 'Deen Zitate', dzContent),
             createItem(`${isoDate}-5`, '19:00', 'Post', 'France', 'Muslima Transformation', mContent.p2),
             createItem(`${isoDate}-6`, '19:15', 'Post', 'Germany', 'Hafsa Bucher', hContent.p2),
-            createItem(`${isoDate}-7`, '20:00', 'Post', 'France', 'Soeurs en Foi', sContent2),
-            createItem(`${isoDate}-8`, '20:15', 'Post', 'Germany', 'Bessere Muslima', bContent2),
+            createItem(`${isoDate}-7`, '20:00', 'Post', 'France', 'Din Avant Dounya', sContent2),
           ];
 
           schedule.push({
@@ -481,7 +710,7 @@
                 }`}
               >
                 <Icon name="Infinity" size={20} />
-                لنهاية العام
+                لنهاية يناير
               </button>
             </div>
 
@@ -559,7 +788,7 @@
         }).reverse();
 
         return (
-          <div className="min-h-screen bg-slate-50/50 pb-20">
+          <div className="min-h-screen bg-slate-50/50 pb-20 relative z-10">
             
             <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white py-16 px-4 mb-8 overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
@@ -571,6 +800,9 @@
                 </h1>
                 
                 <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                  <span className="text-sm opacity-70 mt-2 block">
+                    من 26 نوفمبر 2025 إلى 31 يناير 2026
+                  </span>
                   <span className="text-sm opacity-70 mt-2 block">
                     الأيام السابقة في القائمة المنسدلة الحمراء
                   </span>
