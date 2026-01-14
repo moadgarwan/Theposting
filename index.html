@@ -27,245 +27,9 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #94a3b8;
       }
-      
-      /* Floating Hearts Background */
-      .hearts-container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        z-index: 0;
-        overflow: hidden;
-      }
-      
-      .heart {
-        position: absolute;
-        bottom: -50px;
-        opacity: 0.35;
-        animation: floatUp linear infinite;
-      }
-      
-      .heart::before {
-        content: '❤';
-        font-size: inherit;
-        color: inherit;
-      }
-      
-      /* TASANO floating text */
-      .TASANO {
-        position: absolute;
-        bottom: -80px;
-        opacity: 0.35;
-        animation: floatUpText linear infinite;
-        font-weight: 700;
-        color: #64748b;
-        white-space: nowrap;
-      }
-      
-      .TASANO::before {
-        content: '♥';
-        margin-right: 6px;
-        color: #ef4444;
-      }
-      
-      @keyframes floatUp {
-        0% {
-          transform: translateY(0) rotate(0deg) scale(1);
-          opacity: 0;
-        }
-        10% {
-          opacity: 0.35;
-        }
-        90% {
-          opacity: 0.35;
-        }
-        100% {
-          transform: translateY(-110vh) rotate(360deg) scale(0.8);
-          opacity: 0;
-        }
-      }
-      
-      @keyframes floatUpText {
-        0% {
-          transform: translateY(0) scale(1);
-          opacity: 0;
-        }
-        10% {
-          opacity: 0.35;
-        }
-        90% {
-          opacity: 0.35;
-        }
-        100% {
-          transform: translateY(-110vh) scale(0.9);
-          opacity: 0;
-        }
-      }
-      
-      /* Different heart styles - 60 hearts */
-      .heart:nth-child(1) { left: 5%; font-size: 28px; color: #ec4899; animation-duration: 15s; animation-delay: 0s; }
-      .heart:nth-child(2) { left: 10%; font-size: 36px; color: #f43f5e; animation-duration: 18s; animation-delay: 2s; }
-      .heart:nth-child(3) { left: 15%; font-size: 24px; color: #8b5cf6; animation-duration: 12s; animation-delay: 4s; }
-      .heart:nth-child(4) { left: 20%; font-size: 40px; color: #ec4899; animation-duration: 20s; animation-delay: 1s; }
-      .heart:nth-child(5) { left: 25%; font-size: 32px; color: #06b6d4; animation-duration: 14s; animation-delay: 3s; }
-      .heart:nth-child(6) { left: 30%; font-size: 28px; color: #f43f5e; animation-duration: 16s; animation-delay: 5s; }
-      .heart:nth-child(7) { left: 35%; font-size: 44px; color: #8b5cf6; animation-duration: 19s; animation-delay: 0.5s; }
-      .heart:nth-child(8) { left: 40%; font-size: 22px; color: #ec4899; animation-duration: 13s; animation-delay: 2.5s; }
-      .heart:nth-child(9) { left: 45%; font-size: 36px; color: #06b6d4; animation-duration: 17s; animation-delay: 4.5s; }
-      .heart:nth-child(10) { left: 50%; font-size: 30px; color: #f43f5e; animation-duration: 15s; animation-delay: 1.5s; }
-      .heart:nth-child(11) { left: 55%; font-size: 40px; color: #8b5cf6; animation-duration: 18s; animation-delay: 3.5s; }
-      .heart:nth-child(12) { left: 60%; font-size: 26px; color: #ec4899; animation-duration: 14s; animation-delay: 0.8s; }
-      .heart:nth-child(13) { left: 65%; font-size: 32px; color: #06b6d4; animation-duration: 16s; animation-delay: 2.8s; }
-      .heart:nth-child(14) { left: 70%; font-size: 48px; color: #f43f5e; animation-duration: 21s; animation-delay: 4.8s; }
-      .heart:nth-child(15) { left: 75%; font-size: 28px; color: #8b5cf6; animation-duration: 13s; animation-delay: 1.8s; }
-      .heart:nth-child(16) { left: 80%; font-size: 36px; color: #ec4899; animation-duration: 17s; animation-delay: 3.8s; }
-      .heart:nth-child(17) { left: 85%; font-size: 24px; color: #06b6d4; animation-duration: 12s; animation-delay: 0.3s; }
-      .heart:nth-child(18) { left: 90%; font-size: 40px; color: #f43f5e; animation-duration: 19s; animation-delay: 2.3s; }
-      .heart:nth-child(19) { left: 95%; font-size: 30px; color: #8b5cf6; animation-duration: 15s; animation-delay: 4.3s; }
-      .heart:nth-child(20) { left: 3%; font-size: 26px; color: #ec4899; animation-duration: 14s; animation-delay: 1.3s; }
-      .heart:nth-child(21) { left: 8%; font-size: 38px; color: #06b6d4; animation-duration: 18s; animation-delay: 3.3s; }
-      .heart:nth-child(22) { left: 13%; font-size: 32px; color: #f43f5e; animation-duration: 16s; animation-delay: 5.3s; }
-      .heart:nth-child(23) { left: 23%; font-size: 26px; color: #8b5cf6; animation-duration: 13s; animation-delay: 0.7s; }
-      .heart:nth-child(24) { left: 33%; font-size: 42px; color: #ec4899; animation-duration: 20s; animation-delay: 2.7s; }
-      .heart:nth-child(25) { left: 43%; font-size: 28px; color: #06b6d4; animation-duration: 15s; animation-delay: 4.7s; }
-      .heart:nth-child(26) { left: 53%; font-size: 34px; color: #f43f5e; animation-duration: 17s; animation-delay: 1.7s; }
-      .heart:nth-child(27) { left: 63%; font-size: 24px; color: #8b5cf6; animation-duration: 12s; animation-delay: 3.7s; }
-      .heart:nth-child(28) { left: 73%; font-size: 46px; color: #ec4899; animation-duration: 22s; animation-delay: 0.2s; }
-      .heart:nth-child(29) { left: 83%; font-size: 30px; color: #06b6d4; animation-duration: 14s; animation-delay: 2.2s; }
-      .heart:nth-child(30) { left: 93%; font-size: 36px; color: #f43f5e; animation-duration: 16s; animation-delay: 4.2s; }
-      .heart:nth-child(31) { left: 2%; font-size: 34px; color: #ec4899; animation-duration: 17s; animation-delay: 6s; }
-      .heart:nth-child(32) { left: 7%; font-size: 28px; color: #8b5cf6; animation-duration: 14s; animation-delay: 7s; }
-      .heart:nth-child(33) { left: 12%; font-size: 42px; color: #06b6d4; animation-duration: 19s; animation-delay: 8s; }
-      .heart:nth-child(34) { left: 17%; font-size: 30px; color: #f43f5e; animation-duration: 15s; animation-delay: 9s; }
-      .heart:nth-child(35) { left: 22%; font-size: 38px; color: #ec4899; animation-duration: 18s; animation-delay: 10s; }
-      .heart:nth-child(36) { left: 27%; font-size: 26px; color: #8b5cf6; animation-duration: 13s; animation-delay: 6.5s; }
-      .heart:nth-child(37) { left: 32%; font-size: 44px; color: #06b6d4; animation-duration: 21s; animation-delay: 7.5s; }
-      .heart:nth-child(38) { left: 37%; font-size: 32px; color: #f43f5e; animation-duration: 16s; animation-delay: 8.5s; }
-      .heart:nth-child(39) { left: 42%; font-size: 28px; color: #ec4899; animation-duration: 14s; animation-delay: 9.5s; }
-      .heart:nth-child(40) { left: 47%; font-size: 40px; color: #8b5cf6; animation-duration: 20s; animation-delay: 10.5s; }
-      .heart:nth-child(41) { left: 52%; font-size: 24px; color: #06b6d4; animation-duration: 12s; animation-delay: 6.2s; }
-      .heart:nth-child(42) { left: 57%; font-size: 36px; color: #f43f5e; animation-duration: 17s; animation-delay: 7.2s; }
-      .heart:nth-child(43) { left: 62%; font-size: 30px; color: #ec4899; animation-duration: 15s; animation-delay: 8.2s; }
-      .heart:nth-child(44) { left: 67%; font-size: 46px; color: #8b5cf6; animation-duration: 22s; animation-delay: 9.2s; }
-      .heart:nth-child(45) { left: 72%; font-size: 28px; color: #06b6d4; animation-duration: 14s; animation-delay: 10.2s; }
-      .heart:nth-child(46) { left: 77%; font-size: 34px; color: #f43f5e; animation-duration: 16s; animation-delay: 6.8s; }
-      .heart:nth-child(47) { left: 82%; font-size: 40px; color: #ec4899; animation-duration: 19s; animation-delay: 7.8s; }
-      .heart:nth-child(48) { left: 87%; font-size: 26px; color: #8b5cf6; animation-duration: 13s; animation-delay: 8.8s; }
-      .heart:nth-child(49) { left: 92%; font-size: 38px; color: #06b6d4; animation-duration: 18s; animation-delay: 9.8s; }
-      .heart:nth-child(50) { left: 97%; font-size: 32px; color: #f43f5e; animation-duration: 15s; animation-delay: 10.8s; }
-      .heart:nth-child(51) { left: 4%; font-size: 44px; color: #ec4899; animation-duration: 20s; animation-delay: 11s; }
-      .heart:nth-child(52) { left: 14%; font-size: 28px; color: #8b5cf6; animation-duration: 14s; animation-delay: 12s; }
-      .heart:nth-child(53) { left: 24%; font-size: 36px; color: #06b6d4; animation-duration: 17s; animation-delay: 13s; }
-      .heart:nth-child(54) { left: 34%; font-size: 30px; color: #f43f5e; animation-duration: 15s; animation-delay: 11.5s; }
-      .heart:nth-child(55) { left: 44%; font-size: 42px; color: #ec4899; animation-duration: 21s; animation-delay: 12.5s; }
-      .heart:nth-child(56) { left: 54%; font-size: 26px; color: #8b5cf6; animation-duration: 13s; animation-delay: 13.5s; }
-      .heart:nth-child(57) { left: 64%; font-size: 38px; color: #06b6d4; animation-duration: 18s; animation-delay: 11.2s; }
-      .heart:nth-child(58) { left: 74%; font-size: 32px; color: #f43f5e; animation-duration: 16s; animation-delay: 12.2s; }
-      .heart:nth-child(59) { left: 84%; font-size: 48px; color: #ec4899; animation-duration: 22s; animation-delay: 13.2s; }
-      .heart:nth-child(60) { left: 94%; font-size: 28px; color: #8b5cf6; animation-duration: 14s; animation-delay: 14s; }
-      
-      /* TASANO text positions - 16 texts */
-      .TASANO:nth-child(61) { left: 7%; font-size: 18px; animation-duration: 20s; animation-delay: 1s; }
-      .TASANO:nth-child(62) { left: 27%; font-size: 22px; animation-duration: 24s; animation-delay: 6s; }
-      .TASANO:nth-child(63) { left: 47%; font-size: 16px; animation-duration: 18s; animation-delay: 3s; }
-      .TASANO:nth-child(64) { left: 67%; font-size: 20px; animation-duration: 22s; animation-delay: 8s; }
-      .TASANO:nth-child(65) { left: 87%; font-size: 17px; animation-duration: 19s; animation-delay: 5s; }
-      .TASANO:nth-child(66) { left: 17%; font-size: 21px; animation-duration: 23s; animation-delay: 10s; }
-      .TASANO:nth-child(67) { left: 57%; font-size: 19px; animation-duration: 21s; animation-delay: 12s; }
-      .TASANO:nth-child(68) { left: 77%; font-size: 18px; animation-duration: 20s; animation-delay: 14s; }
-      .TASANO:nth-child(69) { left: 3%; font-size: 20px; animation-duration: 21s; animation-delay: 16s; }
-      .TASANO:nth-child(70) { left: 22%; font-size: 17px; animation-duration: 19s; animation-delay: 18s; }
-      .TASANO:nth-child(71) { left: 37%; font-size: 22px; animation-duration: 24s; animation-delay: 15s; }
-      .TASANO:nth-child(72) { left: 52%; font-size: 18px; animation-duration: 20s; animation-delay: 17s; }
-      .TASANO:nth-child(73) { left: 72%; font-size: 21px; animation-duration: 23s; animation-delay: 19s; }
-      .TASANO:nth-child(74) { left: 92%; font-size: 16px; animation-duration: 18s; animation-delay: 20s; }
-      .TASANO:nth-child(75) { left: 12%; font-size: 19px; animation-duration: 21s; animation-delay: 22s; }
-      .TASANO:nth-child(76) { left: 82%; font-size: 20px; animation-duration: 22s; animation-delay: 24s; }
     </style>
   </head>
   <body class="text-xl">
-    <!-- Floating Hearts Background -->
-    <div class="hearts-container">
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="heart"></div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-      <div class="TASANO">TASANO</div>
-    </div>
-    
     <div id="root"></div>
 
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -352,65 +116,79 @@
         return icons[name] || null;
       };
 
-      // ============== FIXED START DATE: November 26, 2025 ==============
-      const FIXED_START_DATE = new Date('2025-11-26');
+      // ============== FIXED START DATE ==============
+      const FIXED_START_DATE = new Date('2026-01-14');
       FIXED_START_DATE.setHours(0, 0, 0, 0);
 
-      // ============== CONSTANTS / DATA ==============
-      const createItem = (id, time, type, region, account, page) => ({
+      // ============== 14 VIRAL QUOTES DATA ==============
+      // Each quote has French and German page numbers
+      const QUOTES = [
+        { id: 'Q1', fr: '13', de: '13' },
+        { id: 'Q2', fr: '14', de: '14' },
+        { id: 'Q3', fr: '44', de: '45' },
+        { id: 'Q4', fr: '69', de: '71' },
+        { id: 'Q5', fr: '70', de: '72' },
+        { id: 'Q6', fr: '73', de: '75' },
+        { id: 'Q7', fr: '109', de: '114' },
+        { id: 'Q8', fr: '119', de: '124' },
+        { id: 'Q9', fr: '122', de: '127' },
+        { id: 'Q10', fr: '125', de: '130' },
+        { id: 'Q11', fr: '138', de: '143' },
+        { id: 'Q12', fr: '141', de: '147' },
+        { id: 'Q13', fr: '145', de: '150' },
+        { id: 'Q14', fr: '156', de: '163' },
+      ];
+
+      // 4 ACCOUNTS
+      const ACCOUNTS = [
+        { name: 'Maryam', region: 'Germany', lang: 'de' },
+        { name: 'Hafsa Bucher', region: 'Germany', lang: 'de' },
+        { name: 'Yassmine', region: 'France', lang: 'fr' },
+        { name: 'H. Abdulhakim', region: 'France', lang: 'fr' },
+      ];
+
+      // 7-DAY ROTATION: Each day assigns 2 unique quotes per account (8 quotes used daily, no overlap)
+      const ROTATION = [
+        // Day 1: Q1,Q2 | Q3,Q4 | Q5,Q6 | Q7,Q8
+        [[0, 1], [2, 3], [4, 5], [6, 7]],
+        // Day 2: Q9,Q10 | Q11,Q12 | Q13,Q14 | Q1,Q2
+        [[8, 9], [10, 11], [12, 13], [0, 1]],
+        // Day 3: Q3,Q4 | Q5,Q6 | Q7,Q8 | Q9,Q10
+        [[2, 3], [4, 5], [6, 7], [8, 9]],
+        // Day 4: Q11,Q12 | Q13,Q14 | Q1,Q2 | Q3,Q4
+        [[10, 11], [12, 13], [0, 1], [2, 3]],
+        // Day 5: Q5,Q6 | Q7,Q8 | Q9,Q10 | Q11,Q12
+        [[4, 5], [6, 7], [8, 9], [10, 11]],
+        // Day 6: Q13,Q14 | Q1,Q2 | Q3,Q4 | Q5,Q6
+        [[12, 13], [0, 1], [2, 3], [4, 5]],
+        // Day 7: Q7,Q8 | Q9,Q10 | Q11,Q12 | Q13,Q14
+        [[6, 7], [8, 9], [10, 11], [12, 13]],
+      ];
+
+      // Post times for each account's 2 daily posts
+      const POST_TIMES = [
+        { account: 0, post1: '16:00', post2: '19:00' }, // Maryam
+        { account: 1, post1: '17:00', post2: '20:00' }, // Hafsa Bucher
+        { account: 2, post1: '16:20', post2: '19:20' }, // Yassmine
+        { account: 3, post1: '17:20', post2: '20:20' }, // H. Abdulhakim
+      ];
+
+      const createItem = (id, time, region, account, page, quoteId) => ({
         id,
         time,
-        type,
+        type: 'Post',
         region,
         account,
         contentRef: `صفحة ${page}`,
+        quoteId,
       });
 
-      const MUSLIMA_PAGES = [
-        { p1: '68', p2: '202' }, { p1: '44', p2: '39' }, { p1: '14', p2: '62' }, { p1: '141', p2: '139' },
-        { p1: '70', p2: '82' }, { p1: '73', p2: '69' }, { p1: '145', p2: '38' }, { p1: '135', p2: '156' },
-        { p1: '122', p2: '113' }, { p1: '125', p2: '42' }, { p1: '138', p2: '33' }, { p1: '13', p2: '77' },
-        { p1: '103', p2: '119' }, { p1: '109', p2: '167' }, { p1: '68', p2: '202' }, { p1: '44', p2: '39' },
-        { p1: '14', p2: '62' }, { p1: '141', p2: '139' }, { p1: '70', p2: '82' }, { p1: '73', p2: '69' },
-        { p1: '145', p2: '38' }, { p1: '135', p2: '156' }, { p1: '122', p2: '113' }, { p1: '125', p2: '42' },
-        { p1: '138', p2: '33' }, { p1: '13', p2: '77' }, { p1: '103', p2: '119' }, { p1: '109', p2: '167' },
-        { p1: '68', p2: '202' }, { p1: '44', p2: '39' }
-      ];
-
-      const HAFSA_PAGES = [
-        { p1: '75', p2: '71' }, { p1: '150', p2: '39' }, { p1: '140', p2: '163' }, { p1: '127', p2: '118' },
-        { p1: '130', p2: '43' }, { p1: '143', p2: '33' }, { p1: '13', p2: '79' }, { p1: '107', p2: '124' },
-        { p1: '114', p2: '175' }, { p1: '45', p2: '40' }, { p1: '14', p2: '63' }, { p1: '147', p2: '144' },
-        { p1: '72', p2: '84' }, { p1: '75', p2: '71' }, { p1: '150', p2: '39' }, { p1: '140', p2: '163' },
-        { p1: '127', p2: '118' }, { p1: '130', p2: '43' }, { p1: '143', p2: '33' }, { p1: '13', p2: '79' },
-        { p1: '107', p2: '124' }, { p1: '114', p2: '175' }, { p1: '45', p2: '40' }, { p1: '14', p2: '63' },
-        { p1: '147', p2: '144' }, { p1: '72', p2: '84' }, { p1: '150', p2: '39' }, { p1: '140', p2: '163' },
-        { p1: '127', p2: '118' }, { p1: '130', p2: '43' }
-      ];
-
-      const SOEURS_PAGES = [
-        '13', '14', '33', '44', '69', '70', '73', '82', '103', 
-        '109', '119', '122', '125', '135', '138', '141', '145', '156'
-      ];
-
-
-
-      const H_ABDULHAKIM_PAGES = [
-        '109', '119', '122', '125', '135', '138', '141', '145', 
-        '156', '13', '14', '33', '44', '69', '70'
-      ];
-
-      const DEEN_ZITATE_PAGES = [
-        '13', '14', '33', '45', '71', '72', '114', '124', 
-        '127', '130', '140', '143', '147', '150', '163'
-      ];
-
-      // Generate schedule starting from FIXED date (Nov 26, 2025) to Jan 31, 2026
+      // Generate schedule
       const generateSchedule = () => {
         const schedule = [];
         const startDate = new Date(FIXED_START_DATE);
-        const endDate = new Date('2026-01-31');
-        endDate.setHours(0,0,0,0);
+        const endDate = new Date('2026-03-31');
+        endDate.setHours(0, 0, 0, 0);
 
         let currentDate = new Date(startDate);
         let postingDayIndex = 0;
@@ -436,29 +214,45 @@
             continue;
           }
 
-          const muslimaIdx = postingDayIndex % MUSLIMA_PAGES.length;
-          const hafsaIdx = postingDayIndex % HAFSA_PAGES.length;
-          const soeursIdx = (postingDayIndex * 2) % SOEURS_PAGES.length;
-          const hAbdulIdx = postingDayIndex % H_ABDULHAKIM_PAGES.length;
-          const deenIdx = postingDayIndex % DEEN_ZITATE_PAGES.length;
+          const rotationDay = postingDayIndex % 7;
+          const dayRotation = ROTATION[rotationDay];
+          const items = [];
 
-          const mContent = MUSLIMA_PAGES[muslimaIdx];
-          const hContent = HAFSA_PAGES[hafsaIdx];
-          const sContent1 = SOEURS_PAGES[soeursIdx];
-          const sContent2 = SOEURS_PAGES[(soeursIdx + 1) % SOEURS_PAGES.length];
-          const haContent = H_ABDULHAKIM_PAGES[hAbdulIdx];
-          const dzContent = DEEN_ZITATE_PAGES[deenIdx];
+          // Generate posts for each account
+          for (let accIdx = 0; accIdx < ACCOUNTS.length; accIdx++) {
+            const account = ACCOUNTS[accIdx];
+            const [q1Idx, q2Idx] = dayRotation[accIdx];
+            const quote1 = QUOTES[q1Idx];
+            const quote2 = QUOTES[q2Idx];
+            const times = POST_TIMES[accIdx];
 
-          const items = [
-            createItem(`${isoDate}-1`, '15:00', 'Post', 'France', 'Muslima Transformation', mContent.p1),
-            createItem(`${isoDate}-2`, '15:15', 'Post', 'Germany', 'Hafsa Bucher', hContent.p1),
-            createItem(`${isoDate}-3`, '16:00', 'Post', 'France', 'Din Avant Dounya', sContent1),
-            createItem(`${isoDate}-9`, '17:00', 'Post', 'France', 'H. Abdulhakim', haContent),
-            createItem(`${isoDate}-10`, '17:15', 'Post', 'Germany', 'Deen Zitate', dzContent),
-            createItem(`${isoDate}-5`, '19:00', 'Post', 'France', 'Muslima Transformation', mContent.p2),
-            createItem(`${isoDate}-6`, '19:15', 'Post', 'Germany', 'Hafsa Bucher', hContent.p2),
-            createItem(`${isoDate}-7`, '20:00', 'Post', 'France', 'Din Avant Dounya', sContent2),
-          ];
+            // Get correct page based on language
+            const page1 = account.lang === 'fr' ? quote1.fr : quote1.de;
+            const page2 = account.lang === 'fr' ? quote2.fr : quote2.de;
+
+            // Post 1
+            items.push(createItem(
+              `${isoDate}-${accIdx}-1`,
+              times.post1,
+              account.region,
+              account.name,
+              page1,
+              quote1.id
+            ));
+
+            // Post 2
+            items.push(createItem(
+              `${isoDate}-${accIdx}-2`,
+              times.post2,
+              account.region,
+              account.name,
+              page2,
+              quote2.id
+            ));
+          }
+
+          // Sort by time
+          items.sort((a, b) => a.time.localeCompare(b.time));
 
           schedule.push({
             date: isoDate,
@@ -483,27 +277,10 @@
           ? 'border-l-4 border-red-300 bg-gradient-to-r from-red-50/50 to-white/50 text-red-800 opacity-75'
           : isFrance
             ? 'border-l-4 border-blue-500 bg-gradient-to-r from-blue-50 to-white text-blue-900'
-            : 'border-l-4 border-red-500 bg-gradient-to-r from-red-50 to-white text-red-900';
+            : 'border-l-4 border-amber-500 bg-gradient-to-r from-amber-50 to-white text-amber-900';
 
-        const iconColor = isPast ? 'text-red-400' : isFrance ? 'text-blue-500' : 'text-red-500';
-        const timeBg = isPast ? 'bg-red-100/50 text-red-600' : isFrance ? 'bg-blue-100 text-blue-700' : 'bg-red-100 text-red-700';
-
-        let typeLabel = '';
-        let typeIcon = 'FileText';
-
-        if (item.type === 'Video') {
-          typeLabel = 'فيديو';
-          typeIcon = 'Video';
-        } else if (item.account === 'Muslima Transformation' || item.account === 'Hafsa Bucher') {
-          typeLabel = 'منشور من 3 صور';
-          typeIcon = 'Files';
-        } else if (item.account === 'H. Abdulhakim' || item.account === 'Deen Zitate') {
-          typeLabel = 'منشور مع محادثة';
-          typeIcon = 'MessageCircle';
-        } else {
-          typeLabel = 'منشور مع سؤال';
-          typeIcon = 'FileQuestion';
-        }
+        const iconColor = isPast ? 'text-red-400' : isFrance ? 'text-blue-500' : 'text-amber-500';
+        const timeBg = isPast ? 'bg-red-100/50 text-red-600' : isFrance ? 'bg-blue-100 text-blue-700' : 'bg-amber-100 text-amber-700';
 
         return (
           <div className={`relative p-5 rounded-r-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5 mb-2 ${containerClasses}`}>
@@ -515,8 +292,8 @@
                   {item.time}
                 </div>
                 <div className="flex items-center gap-2 text-base font-bold opacity-80">
-                  <Icon name={typeIcon} size={20} />
-                  <span>{typeLabel}</span>
+                  <Icon name="Files" size={20} />
+                  <span>{item.quoteId}</span>
                 </div>
               </div>
 
@@ -540,9 +317,9 @@
       const DayCard = ({ day, filterRegion, isPast = false, isToday = false }) => {
         if (day.isRestDay) {
           return (
-            <div className={`${isPast ? 'bg-red-100/50 border-red-200' : 'bg-amber-100 border-amber-200'} rounded-3xl shadow-md border-2 p-12 flex flex-col items-center justify-center transform transition-transform hover:scale-[1.02]`}>
-              <h3 className={`text-3xl font-black ${isPast ? 'text-red-700' : 'text-amber-800'} mb-6`}>{day.displayDate}</h3>
-              <div className={`${isPast ? 'bg-red-50/80 text-red-600 border-red-200' : 'bg-white/80 text-amber-700 border-amber-200'} backdrop-blur-sm px-12 py-5 rounded-full text-3xl font-bold shadow-sm border`}>
+            <div className={`${isPast ? 'bg-red-100/50 border-red-200' : 'bg-amber-100 border-amber-300'} rounded-3xl shadow-md border-2 p-12 flex flex-col items-center justify-center transform transition-transform hover:scale-[1.02]`}>
+              <h3 className={`text-3xl font-black ${isPast ? 'text-red-700' : 'text-amber-700'} mb-6`}>{day.displayDate}</h3>
+              <div className={`${isPast ? 'bg-red-50/80 text-red-600 border-red-200' : 'bg-yellow-50 text-amber-600 border-amber-300'} backdrop-blur-sm px-12 py-5 rounded-full text-3xl font-bold shadow-sm border`}>
                 يوم راحة 😴
               </div>
             </div>
@@ -555,10 +332,18 @@
 
         if (filteredItems.length === 0) return null;
 
+        // Split items into Post 1 (early times) and Post 2 (late times)
+        const post1Items = filteredItems.filter(item => 
+          item.time === '16:00' || item.time === '16:20' || item.time === '17:00' || item.time === '17:20'
+        );
+        const post2Items = filteredItems.filter(item => 
+          item.time === '19:00' || item.time === '19:20' || item.time === '20:00' || item.time === '20:20'
+        );
+
         const headerBg = isPast 
           ? 'bg-red-100 border-red-200' 
           : isToday 
-            ? 'bg-gradient-to-r from-emerald-500 to-teal-500 border-emerald-300' 
+            ? 'bg-gradient-to-r from-indigo-500 to-blue-500 border-indigo-300' 
             : 'bg-slate-50 border-slate-200';
         
         const headerText = isPast 
@@ -581,10 +366,30 @@
             </div>
 
             <div className={`p-5 ${isPast ? 'bg-red-50/30' : 'bg-slate-50/50'}`}>
-              <div className="flex flex-col gap-3">
-                {filteredItems.map((item) => (
-                  <PostItem key={item.id} item={item} isPast={isPast} />
-                ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Post 1 Column - Right side in RTL */}
+                <div className="flex flex-col bg-gradient-to-b from-emerald-100 to-emerald-50 rounded-2xl overflow-hidden border-2 border-emerald-200 shadow-md">
+                  <div className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-center py-4 font-bold text-xl">
+                    المنشور الأول
+                  </div>
+                  <div className="flex flex-col gap-3 p-4">
+                    {post1Items.map((item) => (
+                      <PostItem key={item.id} item={item} isPast={isPast} />
+                    ))}
+                  </div>
+                </div>
+                
+                {/* Post 2 Column - Left side in RTL */}
+                <div className="flex flex-col bg-gradient-to-b from-purple-100 to-purple-50 rounded-2xl overflow-hidden border-2 border-purple-200 shadow-md">
+                  <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center py-4 font-bold text-xl">
+                    المنشور الثاني
+                  </div>
+                  <div className="flex flex-col gap-3 p-4">
+                    {post2Items.map((item) => (
+                      <PostItem key={item.id} item={item} isPast={isPast} />
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -656,19 +461,19 @@
                 }`}
               >
                 <Icon name="MapPin" size={20} />
-                فرنسا
+                فرنسا 🇫🇷
               </button>
 
               <button
                 onClick={() => setRegion('Germany')}
                 className={`${btnBase} ${
                   currentRegion === 'Germany'
-                    ? `${activeBase} bg-red-500 text-white ring-red-500`
+                    ? `${activeBase} bg-amber-500 text-white ring-amber-500`
                     : inactiveBase
                 }`}
               >
                 <Icon name="MapPin" size={20} />
-                ألمانيا
+                ألمانيا 🇩🇪
               </button>
             </div>
 
@@ -710,10 +515,44 @@
                 }`}
               >
                 <Icon name="Infinity" size={20} />
-                لنهاية يناير
+                كل الجدول
               </button>
             </div>
 
+          </div>
+        );
+      };
+
+      // ============== QUOTE REFERENCE TABLE ==============
+      const QuoteReference = () => {
+        const [isOpen, setIsOpen] = useState(false);
+
+        return (
+          <div className="mb-8">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl shadow-lg hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 font-bold text-lg"
+            >
+              <Icon name="BookOpen" size={24} />
+              <span>مرجع الاقتباسات (14 اقتباس)</span>
+              <Icon name={isOpen ? "ChevronUp" : "ChevronDown"} size={24} />
+            </button>
+            
+            {isOpen && (
+              <div className="mt-4 p-6 bg-white rounded-2xl border-2 border-indigo-200 shadow-lg">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {QUOTES.map((quote, idx) => (
+                    <div key={quote.id} className="flex items-center justify-between p-4 bg-gradient-to-r from-slate-50 to-white rounded-xl border border-slate-200">
+                      <span className="font-black text-lg text-indigo-600">{quote.id}</span>
+                      <div className="flex gap-4 text-sm">
+                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-bold">🇫🇷 صفحة {quote.fr}</span>
+                        <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full font-bold">🇩🇪 صفحة {quote.de}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         );
       };
@@ -729,14 +568,11 @@
           
           const todayStr = today.toISOString().split('T')[0];
 
-          // Find today's index in schedule
           const todayIndex = SCHEDULE_DATA.findIndex(d => d.date === todayStr);
           
-          // If today is before schedule starts, show first days based on duration
           if (todayIndex === -1) {
             const firstDayDate = new Date(SCHEDULE_DATA[0]?.date);
             if (today < firstDayDate) {
-              // Determine how many days to show based on duration
               let daysToShow = 3;
               if (durationFilter === '7days') daysToShow = 7;
               else if (durationFilter === 'all') daysToShow = SCHEDULE_DATA.length;
@@ -747,7 +583,6 @@
                 todayDate: todayStr
               };
             }
-            // Today is after schedule ends
             return {
               pastDays: SCHEDULE_DATA,
               currentDays: [],
@@ -755,15 +590,12 @@
             };
           }
 
-          // Past days: all days before today
           const past = SCHEDULE_DATA.slice(0, todayIndex);
           
-          // Determine how many days to show based on duration filter
           let daysToShow = 3;
           if (durationFilter === '7days') daysToShow = 7;
           else if (durationFilter === 'all') daysToShow = SCHEDULE_DATA.length - todayIndex;
           
-          // Current days: today + more days based on duration
           const current = SCHEDULE_DATA.slice(todayIndex, todayIndex + daysToShow);
 
           return {
@@ -773,14 +605,12 @@
           };
         }, [durationFilter]);
 
-        // Filter current days by region
         const filteredCurrentDays = currentDays.filter(day => {
           if (day.isRestDay) return true;
           if (regionFilter === 'All') return true;
           return day.items.some(item => item.region === regionFilter);
         });
 
-        // Filter past days by region (reversed to show most recent first)
         const filteredPastDays = [...pastDays].filter(day => {
           if (day.isRestDay) return true;
           if (regionFilter === 'All') return true;
@@ -800,17 +630,12 @@
                 </h1>
                 
                 <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                  <span className="text-sm opacity-70 mt-2 block">
-                    من 26 نوفمبر 2025 إلى 31 يناير 2026
-                  </span>
-                  <span className="text-sm opacity-70 mt-2 block">
-                    الأيام السابقة في القائمة المنسدلة الحمراء
-                  </span>
+                  جدول النشر اليومي
                 </p>
               </div>
             </div>
 
-            <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-5xl">
+            <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
               
               <Filters 
                 currentRegion={regionFilter} 
@@ -825,7 +650,7 @@
                 filterRegion={regionFilter} 
               />
 
-              {/* Current Days based on duration filter */}
+              {/* Current Days */}
               <div className="grid grid-cols-1 gap-8">
                 {filteredCurrentDays.length > 0 ? (
                   filteredCurrentDays.map((day) => (
