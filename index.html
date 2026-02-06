@@ -1,682 +1,879 @@
+
+
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>TikTok Posting Schedule</title> <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9
+
+pasted
+
+remember this code
+
+6:53 AM
+
+Acknowledged request to retain code
+
+
+
+Got it, Mouad! I've saved a note about the TikTok Posting Schedule code. If you need to reference or modify it in a future conversation, just let me know and I can work from it. Keep in mind that while I've memorized the key details about the app, you'll want to share the full code again if you need me to make specific edits to it.
+
+Screenshot 2026-02-06 at 6.54.34 AM.png
+Screenshot 2026-02-06 at 6.54.46 AM.png
+remove teh overview 
+removethe menu in top 
+And infornt of each accunt put a logo 
+For example Yassmine 
+it wil be lKE
+fRENCH fLAG AND THEN yASSMINE
+
+6:55 AM
+
+Orchestrated three HTML modifications: removed overview, stripped menu, added language flags
+
+
+
+
+Let me make those three changes to the code.
+
+
+Interpreted UI modification requests with logo integration
+
+
+
+Here's the updated schedule with all three changes:
+
+Overview removed — no more Overview tab
+Legend bar removed — the top bar with Better Muslimah / Reviving My Iman / FR / EN / DE is gone
+Flags before account names — each account now shows 🇫🇷, 🇬🇧, or 🇩🇪 before the name based on their language
+The Daily/Analytics toggle only shows for Mouad's profile (since Fati doesn't have analytics). For Fati, it goes straight to the daily view with no toggle visible.
+
+Schedule
+Code · HTML 
+Screenshot 2026-02-06 at 6.56.46 AM.png
+The days here
+Show only Today tomorrow and after tomorrow, and other days, and then when I click on other days i CAN SELECT ANY DAY 
+
+AND ON ANALYTICS ON mOUAD vERSION
+sHOW Every Reminder, in the side, and then in front of it write how many times it was posted, if not yet, you write 0, if it was posted you write how many times, that includes all languges, and both mouad and fati
+
+7:00 AM
+
+Deciphered feature requests for calendar and analytics interface
+
+
+
+
+
+Here's what changed:
+
+Day selector — now shows just 3 pills: Today, Tomorrow, After Tomorrow, plus an Other Days button with a built-in date picker. Click "Other Days" to pick any date from Feb 9 – Mar 31 and it updates the pill to show the selected date.
+
+Analytics (Mouad) — completely redesigned. Now shows a clean grid of every reminder R1–R100 + Overthinking + Still Here, each with a count badge showing how many times it was posted (across all languages, both Mouad & Fati). If not yet posted, it shows 0 in grey. Same for pages below. Adjust the date picker to see cumulative counts up to any date.
+
+Schedule
+Code · HTML 
+Also instead of reminder, you write 
+Iman 📗 Reminder X for German reminders 
+Jannah 📗 Reminder X for for french and English Reminders 
+Muslima 📕 Page X for German and French 
+and for the two special pages 
+You write 
+Iman 📗 Page X for German
+Jannah 📗 Page X for French and English
+
+7:04 AM
+
+Reconciled multilingual analytics labels with user specifications
+
+
+
+
+
+
+
+
+
+
+
+Now let me update the analytics labels too:
+
+
+Organized multilingual labeling system across content categories
+
+
+
+
+
+
+
+
+
+Here's what the labels now show:
+
+Daily view:
+
+🇩🇪 German reminders → Iman 📗 Reminder X
+🇫🇷🇬🇧 French/English reminders → Jannah 📗 Reminder X
+🇩🇪🇫🇷 Pages → Muslima 📕 Page X
+🇩🇪 German specials → Iman 📗 Page 59 / Iman 📗 Page 73
+🇫🇷🇬🇧 FR/EN specials → Jannah 📗 Page 57 / Jannah 📗 Page 71
+Analytics shows combined labels (Iman/Jannah) since counts aggregate all languages.
+
+Schedule
+Code · HTML 
+Instead of today tomorrow after tomorrow 
+You Show Today and the next 5 days for example Today Saturday Sunday etc 
+Onanalytics on mouad profile
+You will list book one with all pages, and book two with all reminders, and then you list every page and every reminder, and in front on each you write you writ ehow many times they were posted, for example if mouad is loking today, you will show 1 for all the reminders and pages that were posted inluding on fati accounts 
+And if he look on feb 10, you will show how many times each reminder and pages used since today feb 6
+
+Show more
+7:09 AM
+
+Architected analytics dashboard displaying cumulative usage across accounts and languages
+
+
+
+
+
+Now update the analytics date picker default and the rendering:
+
+
+Deciphered analytics dashboard displaying multi-day activity metrics
+
+
+
+
+
+
+
+
+
+
+Two updates:
+
+Day selector — now shows Today + next 5 days by name (Today, Saturday, Sunday, Monday, Tuesday, Wednesday) with dates underneath, plus the "Other Days" date picker for anything beyond.
+
+Analytics — lists every reminder (R1–R100 + Overthinking + Still Here) and every page (19 pages), all initialized to 0. The count shows cumulative posts from Feb 6 up to the selected date, across both Mouad and Fati's accounts in all languages. Default view is Feb 6 (today), so you'll see which content got posted on day one. Change the date to Feb 10 and you'll see 5 days' worth of cumulative counts.
+
+Schedule
+Code · HTML 
+for colors, Keep muslima in yellow, and Jannah in green, and jannah english in little more dark green, and Iman in blue, and make the box color samz size on all, even if teh text is not the same
+
+7:11 AM
+
+Reconciled color scheme consistency across analytics components
+
+
+
+
+
+
+Now update the analytics grid colors to match:
+
+
+Processed color assignments and box standardization requirements
+
+
+
+
+
+Here's the color update:
+
+Muslima 📕 → Yellow badges (pages, all languages)
+Jannah 📗 (French) → Green badges
+Jannah 📗 (English) → Darker green badges
+Iman 📗 (German) → Blue badges
+All content badge boxes are now the same fixed width (min-width: 200px) so they look uniform regardless of text length. The analytics grid items also have consistent sizing with min-height: 40px.
+
+Schedule
+Code · HTML 
+maybe english jannah on light purple 
+and also the analytics is not working, it dosn't show anything
+
+7:13 AM
+
+Diagnosed display bug in analytics view and planned color adjustment
+
+
+
+
+
+Found the bug — when switching to analytics, the display is set to '' which falls back to the CSS display:none. Let me fix that and update the English color.
+
+
+Resolved styling preference and analytics malfunction
+
+
+
+
+Two fixes:
+
+Analytics now works — the bug was that display: '' was falling back to the CSS display: none. Changed it to explicitly set display: 'block'.
+English Jannah → light purple (
+#f3e8ff background, 
+#6b21a8 text) instead of dark green.
+So the final color scheme:
+
+Muslima 📕 → Yellow
+Jannah 📗 FR → Green
+Jannah 📗 EN → Light purple
+Iman 📗 DE → Blue
+Schedule
+Code · HTML 
+good, now posts ones make then in a box, like apple liquid glas desing, and do the same for posts twos, but make the color of teh two boxes different
+
+7:16 AM
+
+Processed design request for styled post containers
+
+
+
+
+
+
+
+The two rounds now sit in frosted glass boxes:
+
+Round 1 → soft blue glass (blurred, semi-transparent with blue tint)
+Round 2 → soft green glass (blurred, semi-transparent with green tint)
+Each has the Apple liquid glass effect with backdrop blur, subtle white inner border glow, and semi-transparent post cards that float on top. The round headers also got a subtle divider line to complete the look.
+
+Schedule
+Code · HTML 
+ok good, now on other days, use a beatiul desing also like apple design, when I clickk on it, it show the next 10 days, in a box in good desing
+
+7:19 AM
+
+Acknowledged user's design request for calendar interface
+
+
+
+
+
+
+
+
+
+Now when you click Other Days, a frosted glass dropdown appears with:
+
+10 days at a time in a clean 2-column grid showing day number, weekday, and month
+📕 indicator on book days (with warm yellow number badge)
+← → navigation arrows to page through all remaining days
+The currently selected day gets highlighted in your profile color (blue for Mouad, purple for Fati)
+A "Pick exact date" button at the bottom with a native date picker fallback
+Click outside or pick a day to close the dropdown smoothly
+The whole thing uses the Apple liquid glass aesthetic with backdrop blur, subtle shadows, and smooth scale/fade animations.
+
+Schedule
+Code · HTML 
+good, now the analytics, just show the 32 reminders used in teh website 
+and the 10 pages used in the website 
+And then infronf of each one show how many times it was used 
+Youa re showing me now a lot of reminders and pages
+
+7:22 AM
+
+Engineered analytics to filter and display usage metrics dynamically
+
+
+
+
+
+
+
+
+Now the analytics only shows exactly what's in the schedule — the 32 reminders (R1, R5, R7, R11, R12, R13, R16, R18, R19, R22, R26, R27, R32, R36, R38, R43, R45, R46, R49, R51, R56, R57, R68, R74, R84, R90, R93, R97, R98, R100 + Overthinking + Still Here) and the 19 pages actually used. No more clutter from unused R2, R3, R4, etc.
+
+Schedule
+Code · HTML 
+Mulsima pages split them to german and french pages
+
+7:23 AM
+
+Partitioned Muslima pages into distinct German and French categories
+
+
+
+
+
+
+
+Analytics now has three sections:
+
+📗 Iman / Jannah — Reminders (32 items)
+📕 Muslima 🇫🇷 — French Pages (pages posted on FR accounts)
+📕 Muslima 🇩🇪 — German Pages (pages posted on DE accounts)
+Each with their own count showing how many times they were posted up to the selected date.
+
+Schedule
+Code · HTML 
+Jannah /iman, call it only Jannah
+
+7:24 AM
+
+Consolidated naming terminology throughout text
+
+
+
+
+Done — all references now just say Jannah instead of Iman/Jannah.
+
+Schedule
+Code · HTML 
+
+
+You're now using extra usage ∙ Your session limit resets at 8:00 AM
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Schedule · HTML
+Copy
+
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>جدول نشر TikTok - 2025/2026</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Cairo', sans-serif;
-        background-color: #f8fafc;
-        overflow-x: hidden;
-      }
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #cbd5e1;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8;
-      }
-    </style>
-  </head>
-  <body class="text-xl">
-    <div id="root"></div>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Posting Schedule</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf9;--surface:#fff;--surface-hover:#f5f5f4;--text-primary:#1c1917;--text-secondary:#78716c;--text-tertiary:#a8a29e;--border:#e7e5e4;--border-light:#f5f5f4;--book1:#fef3c7;--book1-text:#92400e;--book1-border:#fcd34d;--book2:#d1fae5;--book2-text:#065f46;--book2-border:#6ee7b7;--fr:#dbeafe;--fr-text:#1e40af;--en:#ffedd5;--en-text:#c2410c;--de:#dcfce7;--de-text:#166534;--mouad-accent:#2563eb;--mouad-light:#eff6ff;--fati-accent:#7c3aed;--fati-light:#f5f3ff;--shadow-sm:0 1px 2px rgba(0,0,0,.04);--shadow-md:0 4px 12px rgba(0,0,0,.06);--shadow-lg:0 12px 40px rgba(0,0,0,.08);--shadow-xl:0 24px 60px rgba(0,0,0,.1);--radius:16px;--radius-sm:10px;--radius-xs:6px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text-primary);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#profile-screen{min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 24px;position:relative}
+.profile-bg-glow{position:fixed;width:600px;height:600px;border-radius:50%;filter:blur(120px);opacity:.15;pointer-events:none;z-index:0}
+.glow-1{background:#2563eb;top:-200px;left:-100px}.glow-2{background:#7c3aed;bottom:-200px;right:-100px}
+.profile-header{text-align:center;margin-bottom:56px;position:relative;z-index:1;animation:fadeUp .8s ease}
+.profile-header .logo-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--text-primary),#57534e);border-radius:18px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;box-shadow:var(--shadow-lg)}
+.profile-header h1{font-size:38px;font-weight:700;letter-spacing:-1.2px;line-height:1.1;margin-bottom:12px}
+.profile-header p{font-size:17px;color:var(--text-secondary)}
+.profile-cards{display:flex;gap:24px;position:relative;z-index:1;animation:fadeUp .8s ease .15s both}
+.profile-card{width:280px;padding:40px 32px;background:var(--surface);border:1px solid var(--border);border-radius:24px;text-align:center;cursor:pointer;transition:all .4s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
+.profile-card::before{content:'';position:absolute;inset:0;border-radius:24px;opacity:0;transition:opacity .4s ease}
+.profile-card[data-profile="mouad"]::before{background:linear-gradient(135deg,rgba(37,99,235,.04),rgba(37,99,235,.01))}
+.profile-card[data-profile="fati"]::before{background:linear-gradient(135deg,rgba(124,58,237,.04),rgba(124,58,237,.01))}
+.profile-card:hover::before{opacity:1}
+.profile-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-xl);border-color:transparent}
+.profile-card[data-profile="mouad"]:hover{border-color:rgba(37,99,235,.2)}
+.profile-card[data-profile="fati"]:hover{border-color:rgba(124,58,237,.2)}
+.profile-avatar{width:80px;height:80px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:32px;font-weight:700;color:#fff}
+.profile-card[data-profile="mouad"] .profile-avatar{background:linear-gradient(135deg,#2563eb,#1d4ed8)}
+.profile-card[data-profile="fati"] .profile-avatar{background:linear-gradient(135deg,#7c3aed,#6d28d9)}
+.profile-card h2{font-size:22px;font-weight:600;letter-spacing:-.5px;margin-bottom:6px}
+.profile-card .accounts-count{font-size:14px;color:var(--text-secondary);margin-bottom:20px}
+.profile-card .time-badge{display:inline-block;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500}
+.profile-card[data-profile="mouad"] .time-badge{background:var(--mouad-light);color:var(--mouad-accent)}
+.profile-card[data-profile="fati"] .time-badge{background:var(--fati-light);color:var(--fati-accent)}
+#schedule-screen{display:none;min-height:100dvh}
+.top-bar{position:sticky;top:0;z-index:100;background:rgba(250,250,249,.82);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--border);padding:0 24px}
+.top-bar-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;height:60px;gap:16px}
+.back-btn{display:flex;align-items:center;gap:6px;background:none;border:none;font-size:15px;font-weight:500;cursor:pointer;padding:8px 12px 8px 8px;border-radius:var(--radius-sm);transition:background .2s;font-family:inherit;color:var(--text-primary)}
+.back-btn:hover{background:var(--surface-hover)}
+.back-btn svg{width:18px;height:18px}
+.top-bar-title{font-size:17px;font-weight:600;letter-spacing:-.3px}
+.profile-indicator{margin-left:auto;display:flex;align-items:center;gap:8px}
+.profile-dot{width:10px;height:10px;border-radius:50%}
+.profile-dot.mouad{background:var(--mouad-accent)}.profile-dot.fati{background:var(--fati-accent)}
+.profile-indicator span{font-size:14px;font-weight:500;color:var(--text-secondary)}
 
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+/* Day selector - 3 pills + Other */
+.day-nav{max-width:1200px;margin:0 auto;padding:20px 24px 0}
+.day-pills{display:flex;gap:8px;flex-wrap:wrap}
+.day-pill{padding:10px 20px;border-radius:100px;border:1px solid var(--border);background:var(--surface);font-size:14px;font-weight:500;cursor:pointer;transition:all .25s ease;font-family:inherit;white-space:nowrap;color:var(--text-secondary);display:flex;flex-direction:column;align-items:center;gap:2px;min-width:90px}
+.day-pill .pill-date{font-size:14px;font-weight:600}
+.day-pill .pill-dow{font-size:11px;opacity:.7}
+.day-pill:hover{border-color:var(--text-tertiary);background:var(--surface-hover)}
+.day-pill.active.mouad{background:var(--mouad-accent);color:#fff;border-color:var(--mouad-accent)}
+.day-pill.active.fati{background:var(--fati-accent);color:#fff;border-color:var(--fati-accent)}
+.day-pill.other-pill{flex-direction:row;gap:6px;padding:10px 18px;position:relative;cursor:pointer}
+.day-pill.other-pill .pill-icon{font-size:16px}
+.day-pill.other-pill .pill-date{font-size:14px;font-weight:500}
+.day-pill.other-pill .pill-dow{display:none}
 
-    <script type="text/babel">
-      const { useState, useMemo } = React;
+/* Other days dropdown */
+.other-dropdown-overlay{position:fixed;inset:0;z-index:998;background:rgba(0,0,0,.15);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .25s ease}
+.other-dropdown-overlay.open{opacity:1;pointer-events:auto}
+.other-dropdown{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(8px) scale(.96);z-index:999;min-width:320px;padding:8px;background:rgba(255,255,255,.82);backdrop-filter:blur(60px) saturate(200%);-webkit-backdrop-filter:blur(60px) saturate(200%);border:1px solid rgba(255,255,255,.6);border-radius:18px;box-shadow:0 8px 40px rgba(0,0,0,.12),0 2px 8px rgba(0,0,0,.06),inset 0 1px 0 rgba(255,255,255,.9);opacity:0;pointer-events:none;transition:all .3s cubic-bezier(.16,1,.3,1)}
+.other-dropdown.open{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0) scale(1)}
+.other-dropdown-header{display:flex;align-items:center;justify-content:space-between;padding:8px 12px 10px;border-bottom:1px solid rgba(0,0,0,.06)}
+.other-dropdown-header span{font-size:13px;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:.5px}
+.other-dropdown-nav{display:flex;gap:4px}
+.other-dropdown-nav button{width:30px;height:30px;border-radius:50%;border:none;background:rgba(0,0,0,.04);cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center;transition:all .2s;color:var(--text-secondary)}
+.other-dropdown-nav button:hover{background:rgba(0,0,0,.08)}
+.other-dropdown-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:6px 0}
+.other-day-btn{display:flex;align-items:center;gap:10px;padding:10px 14px;border:none;background:transparent;border-radius:12px;cursor:pointer;transition:all .2s ease;font-family:inherit;text-align:left;width:100%}
+.other-day-btn:hover{background:rgba(0,0,0,.04)}
+.other-day-btn:active{transform:scale(.97)}
+.other-day-btn .od-num{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;background:rgba(0,0,0,.03);color:var(--text-primary);transition:all .2s}
+.other-day-btn:hover .od-num{background:rgba(0,0,0,.06)}
+.other-day-btn .od-info{display:flex;flex-direction:column}
+.other-day-btn .od-dow{font-size:13px;font-weight:600;color:var(--text-primary)}
+.other-day-btn .od-month{font-size:11px;color:var(--text-tertiary);font-weight:500}
+.other-day-btn.od-book .od-num{background:rgba(254,243,199,.6);color:#92400e}
+.other-day-btn.od-selected .od-num{background:var(--mouad-accent);color:#fff}
+.fati-mode .other-day-btn.od-selected .od-num{background:var(--fati-accent)}
+.other-dropdown-footer{padding:6px 4px 4px;border-top:1px solid rgba(0,0,0,.06)}
+.other-datepicker-btn{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;padding:10px;border:none;background:rgba(0,0,0,.03);border-radius:12px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:500;color:var(--text-secondary);transition:all .2s;position:relative}
+.other-datepicker-btn:hover{background:rgba(0,0,0,.06)}
+.other-datepicker-btn input{position:absolute;opacity:0;width:100%;height:100%;top:0;left:0;cursor:pointer;font-size:16px}
 
-      // ============== ICONS ==============
-      const Icon = ({ name, size = 24, className = "", strokeWidth = 2 }) => {
-        const icons = {
-          Calendar: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/>
-            </svg>
-          ),
-          CalendarDays: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/>
-            </svg>
-          ),
-          Filter: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
-            </svg>
-          ),
-          MapPin: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
-            </svg>
-          ),
-          Infinity: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"/>
-            </svg>
-          ),
-          Clock: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-            </svg>
-          ),
-          BookOpen: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-            </svg>
-          ),
-          Video: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/>
-            </svg>
-          ),
-          Files: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="M15.5 2H8.6c-.4 0-.8.2-1.1.5-.3.3-.5.7-.5 1.1v12.8c0 .4.2.8.5 1.1.3.3.7.5 1.1.5h9.8c.4 0 .8-.2 1.1-.5.3-.3.5-.7.5-1.1V6.5L15.5 2z"/><path d="M3 7.6v12.8c0 .4.2.8.5 1.1.3.3.7.5 1.1.5h9.8"/><path d="M15 2v5h5"/>
-            </svg>
-          ),
-          FileQuestion: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M10 10.3c.2-.4.5-.8.9-1a2.1 2.1 0 0 1 2.6.4c.3.4.5.8.5 1.3 0 1.3-2 2-2 2"/><path d="M12 17h.01"/>
-            </svg>
-          ),
-          MessageCircle: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/>
-            </svg>
-          ),
-          ChevronDown: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="m6 9 6 6 6-6"/>
-            </svg>
-          ),
-          ChevronUp: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="m18 15-6-6-6 6"/>
-            </svg>
-          ),
-          History: (
-            <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
-              <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/>
-            </svg>
-          ),
-        };
-        return icons[name] || null;
-      };
+.schedule-content{max-width:1200px;margin:0 auto;padding:24px;animation:fadeIn .4s ease}
+.day-title-row{display:flex;align-items:baseline;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.day-title{font-size:28px;font-weight:700;letter-spacing:-.8px}
+.day-subtitle{font-size:14px;color:var(--text-tertiary);font-weight:500}
+.rounds-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:900px){.rounds-grid{grid-template-columns:1fr;gap:12px}}
+.round-header{display:flex;align-items:center;gap:10px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.5)}
+.round-label{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--text-secondary)}
+.round-time-range{font-size:12px;font-weight:500;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,.5);color:var(--text-secondary)}
+.post-list{display:flex;flex-direction:column;gap:4px}
+.post-card{display:grid;grid-template-columns:48px 1fr auto;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,255,255,.65);border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,.5);transition:all .2s ease;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.post-card:hover{background:rgba(255,255,255,.85);box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.post-time{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}
+.post-account{font-size:13px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.account-flag{font-size:15px;flex-shrink:0}
+.content-badge{display:inline-flex;align-items:center;justify-content:center;padding:4px 10px;border-radius:var(--radius-xs);font-size:12px;font-weight:500;white-space:nowrap;min-width:200px;text-align:center}
+.content-badge.muslima{background:#fef3c7;color:#92400e}
+.content-badge.jannah-fr{background:#d1fae5;color:#065f46}
+.content-badge.jannah-en{background:#f3e8ff;color:#6b21a8}
+.content-badge.iman{background:#dbeafe;color:#1e40af}
+.round-col{position:relative;padding:20px;border-radius:20px;backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);border:1px solid rgba(255,255,255,.6);box-shadow:0 4px 24px rgba(0,0,0,.04),inset 0 1px 0 rgba(255,255,255,.8)}
+.round-col:first-child{background:linear-gradient(135deg,rgba(219,234,254,.35),rgba(191,219,254,.2),rgba(224,231,255,.15));border-color:rgba(147,197,253,.4)}
+.round-col:last-child{background:linear-gradient(135deg,rgba(209,250,229,.35),rgba(167,243,208,.2),rgba(187,247,208,.15));border-color:rgba(110,231,183,.4)}
+@media(max-width:900px){.round-col:last-child{margin-top:8px}}
 
-      // ============== FIXED START DATE ==============
-      const FIXED_START_DATE = new Date('2026-01-14');
-      FIXED_START_DATE.setHours(0, 0, 0, 0);
+/* Analytics */
+#analytics-view{display:none;max-width:1200px;margin:0 auto;padding:24px;animation:fadeIn .4s ease}
+.analytics-header{margin-bottom:24px}
+.analytics-header h2{font-size:24px;font-weight:700;letter-spacing:-.6px;margin-bottom:8px}
+.analytics-header p{font-size:14px;color:var(--text-secondary);line-height:1.5}
+.date-picker-row{display:flex;align-items:center;gap:12px;margin-bottom:28px;flex-wrap:wrap}
+.date-picker-label{font-size:14px;font-weight:500;color:var(--text-secondary)}
+.date-picker-input{padding:10px 16px;border:1px solid var(--border);border-radius:var(--radius-sm);font-family:inherit;font-size:15px;font-weight:500;background:var(--surface);color:var(--text-primary);cursor:pointer;transition:border-color .2s}
+.date-picker-input:focus{outline:none;border-color:var(--mouad-accent)}
+.analytics-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:28px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;text-align:center}
+.stat-card .stat-value{font-size:28px;font-weight:700;letter-spacing:-1px}
+.stat-card .stat-label{font-size:12px;font-weight:500;color:var(--text-secondary);margin-top:4px}
+.analytics-section-title{font-size:16px;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:8px}
 
-      // ============== 14 VIRAL QUOTES DATA ==============
-      // Each quote has French and German page numbers
-      const QUOTES = [
-        { id: 'Q1', fr: '13', de: '13' },
-        { id: 'Q2', fr: '14', de: '14' },
-        { id: 'Q3', fr: '44', de: '45' },
-        { id: 'Q4', fr: '69', de: '71' },
-        { id: 'Q5', fr: '70', de: '72' },
-        { id: 'Q6', fr: '73', de: '75' },
-        { id: 'Q7', fr: '109', de: '114' },
-        { id: 'Q8', fr: '119', de: '124' },
-        { id: 'Q9', fr: '122', de: '127' },
-        { id: 'Q10', fr: '125', de: '130' },
-        { id: 'Q11', fr: '138', de: '143' },
-        { id: 'Q12', fr: '141', de: '147' },
-        { id: 'Q13', fr: '145', de: '150' },
-        { id: 'Q14', fr: '156', de: '163' },
-      ];
+/* Reminder grid */
+.reminder-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px;margin-bottom:28px}
+.reminder-row{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;background:var(--surface);border:1px solid var(--border-light);border-radius:var(--radius-xs);transition:all .2s;min-height:40px}
+.reminder-row:hover{border-color:var(--border);box-shadow:var(--shadow-sm)}
+.reminder-name{font-size:13px;font-weight:500;display:flex;align-items:center;gap:6px}
+.reminder-count{font-size:14px;font-weight:700;min-width:36px;text-align:center;padding:2px 8px;border-radius:6px}
+.reminder-count.zero{color:var(--text-tertiary);background:var(--surface-hover)}
+.reminder-count.posted{color:#065f46;background:#d1fae5}
+.reminder-count.posted-book1{color:#92400e;background:#fef3c7}
 
-      // 4 ACCOUNTS
-      const ACCOUNTS = [
-        { name: 'Maryam', region: 'Germany', lang: 'de' },
-        { name: 'Hafsa Bucher', region: 'Germany', lang: 'de' },
-        { name: 'Yassmine', region: 'France', lang: 'fr' },
-        { name: 'H. Abdulhakim', region: 'France', lang: 'fr' },
-      ];
+.page-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:6px;margin-bottom:28px}
 
-      // 7-DAY ROTATION: Each day assigns 2 unique quotes per account (8 quotes used daily, no overlap)
-      const ROTATION = [
-        // Day 1: Q1,Q2 | Q3,Q4 | Q5,Q6 | Q7,Q8
-        [[0, 1], [2, 3], [4, 5], [6, 7]],
-        // Day 2: Q9,Q10 | Q11,Q12 | Q13,Q14 | Q1,Q2
-        [[8, 9], [10, 11], [12, 13], [0, 1]],
-        // Day 3: Q3,Q4 | Q5,Q6 | Q7,Q8 | Q9,Q10
-        [[2, 3], [4, 5], [6, 7], [8, 9]],
-        // Day 4: Q11,Q12 | Q13,Q14 | Q1,Q2 | Q3,Q4
-        [[10, 11], [12, 13], [0, 1], [2, 3]],
-        // Day 5: Q5,Q6 | Q7,Q8 | Q9,Q10 | Q11,Q12
-        [[4, 5], [6, 7], [8, 9], [10, 11]],
-        // Day 6: Q13,Q14 | Q1,Q2 | Q3,Q4 | Q5,Q6
-        [[12, 13], [0, 1], [2, 3], [4, 5]],
-        // Day 7: Q7,Q8 | Q9,Q10 | Q11,Q12 | Q13,Q14
-        [[6, 7], [8, 9], [10, 11], [12, 13]],
-      ];
+.view-toggle-container{display:flex;align-items:center;max-width:1200px;margin:0 auto;padding:16px 24px 0;flex-wrap:wrap;gap:12px}
+.view-toggle{display:flex;background:var(--surface-hover);border-radius:var(--radius-sm);padding:3px;border:1px solid var(--border)}
+.view-btn{padding:7px 16px;border-radius:8px;border:none;background:none;font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;color:var(--text-secondary);transition:all .2s;white-space:nowrap}
+.view-btn.active{background:var(--surface);color:var(--text-primary);box-shadow:var(--shadow-sm)}
 
-      // Post times for each account's 2 daily posts
-      const POST_TIMES = [
-        { account: 0, post1: '16:00', post2: '19:00' }, // Maryam
-        { account: 1, post1: '17:00', post2: '20:00' }, // Hafsa Bucher
-        { account: 2, post1: '16:20', post2: '19:20' }, // Yassmine
-        { account: 3, post1: '17:20', post2: '20:20' }, // H. Abdulhakim
-      ];
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@media(max-width:640px){.profile-cards{flex-direction:column;gap:16px}.profile-card{width:100%;max-width:320px;padding:32px 24px}.profile-header h1{font-size:30px}.post-card{grid-template-columns:42px 1fr auto;gap:8px;padding:8px 10px}.post-time{font-size:12px}.post-account{font-size:12px}.day-title{font-size:22px}.analytics-stats{grid-template-columns:repeat(2,1fr)}.reminder-grid,.page-grid{grid-template-columns:1fr 1fr}.other-dropdown{min-width:280px;left:auto;right:0;transform:translateX(0) translateY(8px) scale(.96)}.other-dropdown.open{transform:translateX(0) translateY(0) scale(1)}}
+</style>
+</head>
+<body>
+<div id="profile-screen">
+  <div class="profile-bg-glow glow-1"></div>
+  <div class="profile-bg-glow glow-2"></div>
+  <div class="profile-header">
+    <div class="logo-icon">📱</div>
+    <h1>Posting Schedule</h1>
+    <p>6 Feb – 31 Mar 2026 · Select a profile</p>
+  </div>
+  <div class="profile-cards">
+    <div class="profile-card" data-profile="mouad" onclick="selectProfile('mouad')">
+      <div class="profile-avatar">M</div>
+      <h2>Mouad</h2>
+      <div class="accounts-count">9 accounts · Analytics</div>
+      <div class="time-badge">14:00 → 20:00</div>
+    </div>
+    <div class="profile-card" data-profile="fati" onclick="selectProfile('fati')">
+      <div class="profile-avatar">F</div>
+      <h2>Fati</h2>
+      <div class="accounts-count">7 accounts</div>
+      <div class="time-badge">15:00 → 20:30</div>
+    </div>
+  </div>
+</div>
 
-      const createItem = (id, time, region, account, page, quoteId) => ({
-        id,
-        time,
-        type: 'Post',
-        region,
-        account,
-        contentRef: `صفحة ${page}`,
-        quoteId,
-      });
+<div id="schedule-screen">
+  <div class="top-bar"><div class="top-bar-inner">
+    <button class="back-btn" onclick="goBack()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>Back</button>
+    <div class="top-bar-title" id="topBarTitle">Schedule</div>
+    <div class="profile-indicator"><div class="profile-dot" id="profileDot"></div><span id="profileName"></span></div>
+  </div></div>
 
-      // Generate schedule
-      const generateSchedule = () => {
-        const schedule = [];
-        const startDate = new Date(FIXED_START_DATE);
-        const endDate = new Date('2026-03-31');
-        endDate.setHours(0, 0, 0, 0);
+  <div class="view-toggle-container" id="viewToggleContainer" style="display:none">
+    <div class="view-toggle" id="viewToggle">
+      <button class="view-btn active" id="dailyBtn" onclick="switchView('daily')">Daily</button>
+      <button class="view-btn" id="analyticsBtn" onclick="switchView('analytics')">Analytics</button>
+    </div>
+  </div>
 
-        let currentDate = new Date(startDate);
-        let postingDayIndex = 0;
+  <div id="daily-view">
+    <div class="day-nav"><div class="day-pills" id="dayPills"></div></div>
+    <div class="schedule-content" id="scheduleContent"></div>
+  </div>
 
-        while (currentDate <= endDate) {
-          const isoDate = currentDate.toISOString().split('T')[0];
-          const displayDate = new Intl.DateTimeFormat('ar-EG-u-nu-latn', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          }).format(currentDate);
+  <div id="analytics-view">
+    <div class="analytics-header">
+      <h2>Content Analytics</h2>
+      <p>Cumulative post counts across all 16 accounts (Mouad + Fati) from 6 Feb up to the selected date.</p>
+    </div>
+    <div class="date-picker-row">
+      <span class="date-picker-label">Count posts from 6 Feb up to:</span>
+      <input type="date" class="date-picker-input" id="analyticsDate" min="2026-02-06" max="2026-03-31" value="2026-02-06" onchange="renderAnalytics()">
+    </div>
+    <div class="analytics-stats" id="analyticsStats"></div>
+    <div class="analytics-section-title">📗 Jannah — Reminders</div>
+    <div class="reminder-grid" id="reminderGrid"></div>
+    <div class="analytics-section-title">📕 Muslima 🇫🇷 — French Pages</div>
+    <div class="page-grid" id="pageGridFR"></div>
+    <div class="analytics-section-title">📕 Muslima 🇩🇪 — German Pages</div>
+    <div class="page-grid" id="pageGridDE"></div>
+  </div>
+</div>
 
-          // Saturday = Rest Day
-          if (currentDate.getDay() === 6) {
-            schedule.push({
-              date: isoDate,
-              displayDate,
-              items: [],
-              isRestDay: true
-            });
-            currentDate.setDate(currentDate.getDate() + 1);
-            continue;
-          }
+<script>
+const START=new Date(2026,1,6),END=new Date(2026,2,31),DN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],MN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const SPECIAL_PAGES={'Overthinking':{FR:57,EN:57,DE:59},'Still Here':{FR:71,EN:71,DE:73}};
+const FLAGS={FR:'🇫🇷',EN:'🇬🇧',DE:'🇩🇪'};
 
-          const rotationDay = postingDayIndex % 7;
-          const dayRotation = ROTATION[rotationDay];
-          const items = [];
+function allDates(){const d=[];let c=new Date(START);while(c<=END){d.push(new Date(c));c.setDate(c.getDate()+1)}return d}
+const AD=allDates();
+function dayIdx(d){return(Math.round((d-START)/864e5)+1)%14}
+function fmtLong(d){return DN[d.getDay()]+', '+d.getDate()+' '+MN[d.getMonth()]+' '+d.getFullYear()}
+function fmtShort(d){return d.getDate()+' '+MN[d.getMonth()]}
+function dateToIdx(d){return Math.round((d-START)/864e5)}
 
-          // Generate posts for each account
-          for (let accIdx = 0; accIdx < ACCOUNTS.length; accIdx++) {
-            const account = ACCOUNTS[accIdx];
-            const [q1Idx, q2Idx] = dayRotation[accIdx];
-            const quote1 = QUOTES[q1Idx];
-            const quote2 = QUOTES[q2Idx];
-            const times = POST_TIMES[accIdx];
+function fmtContent(s,lang){
+  const rBook=lang==='DE'?'Iman':'Jannah';
+  const pBook='Muslima';
+  if(s.includes('Overthinking')){const pg=SPECIAL_PAGES['Overthinking'][lang]||57;return rBook+' 📗 Page '+pg}
+  if(s.includes('Still Here')){const pg=SPECIAL_PAGES['Still Here'][lang]||71;return rBook+' 📗 Page '+pg}
+  if(s.includes('📕')){const m=s.match(/p(\d+)/);return m?pBook+' 📕 Page '+m[1]:'📕 Page'}
+  if(s.includes('📗')){const m=s.match(/R(\d+)/);return m?rBook+' 📗 Reminder '+m[1]:'📗'}
+  return s
+}
+function cKey(s){return s.replace(/^📕\s*/,'').replace(/^📗\s*/,'').trim()}
 
-            // Get correct page based on language
-            const page1 = account.lang === 'fr' ? quote1.fr : quote1.de;
-            const page2 = account.lang === 'fr' ? quote2.fr : quote2.de;
+const D={mouad:{gap:"4h gap",r1t:"14:00 → 16:00",r2t:"18:00 → 20:00",daily:[
+{b:1,r1:[["14:00","Maryam","FR","📕 p14"],["14:15","Naimalist","DE","📕 p72"],["14:30","Hafsabdulhakim","EN","📗 R13"],["14:45","Hamza","FR","📕 p44"],["15:00","Ha Abdulhakim","DE","📕 p114"],["15:15","Ilyasreads","EN","📗 R18"],["15:30","Leilareads","FR","📕 p69"],["15:45","Ein Herz Voller Iman","DE","📗 R22"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R11"]],r2:[["18:00","Maryam","FR","📗 R1"],["18:15","Naimalist","DE","📗 R27"],["18:30","Hafsabdulhakim","EN","📗 R16"],["18:45","Hamza","FR","📗 R5"],["19:00","Ha Abdulhakim","DE","📗 R32"],["19:15","Ilyasreads","EN","📗 R19"],["19:30","Leilareads","FR","📗 R7"],["19:45","Ein Herz Voller Iman","DE","📗 R26"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R12"]]},
+{b:0,r1:[["14:00","Maryam","FR","📗 R18"],["14:15","Naimalist","DE","📗 R51"],["14:30","Hafsabdulhakim","EN","📗 R38"],["14:45","Hamza","FR","📗 R22"],["15:00","Ha Abdulhakim","DE","📗 R57"],["15:15","Ilyasreads","EN","📗 R45"],["15:30","Leilareads","FR","📗 R27"],["15:45","Ein Herz Voller Iman","DE","📗 Still Here"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R36"]],r2:[["18:00","Maryam","FR","📗 R19"],["18:15","Naimalist","DE","📗 R56"],["18:30","Hafsabdulhakim","EN","📗 R43"],["18:45","Hamza","FR","📗 R26"],["19:00","Ha Abdulhakim","DE","📗 R68"],["19:15","Ilyasreads","EN","📗 R46"],["19:30","Leilareads","FR","📗 R32"],["19:45","Ein Herz Voller Iman","DE","📗 R49"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 Overthinking"]]},
+{b:1,r1:[["14:00","Maryam","FR","📕 p145"],["14:15","Naimalist","DE","📕 p71"],["14:30","Hafsabdulhakim","EN","📗 Still Here"],["14:45","Hamza","FR","📕 p14"],["15:00","Ha Abdulhakim","DE","📕 p72"],["15:15","Ilyasreads","EN","📗 R51"],["15:30","Leilareads","FR","📕 p44"],["15:45","Ein Herz Voller Iman","DE","📗 R57"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R45"]],r2:[["18:00","Maryam","FR","📗 Overthinking"],["18:15","Naimalist","DE","📗 R74"],["18:30","Hafsabdulhakim","EN","📗 R49"],["18:45","Hamza","FR","📗 R38"],["19:00","Ha Abdulhakim","DE","📗 R84"],["19:15","Ilyasreads","EN","📗 R56"],["19:30","Leilareads","FR","📗 R43"],["19:45","Ein Herz Voller Iman","DE","📗 R68"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R46"]]},
+{b:0,r1:[["14:00","Maryam","FR","📗 R51"],["14:15","Naimalist","DE","📗 R11"],["14:30","Hafsabdulhakim","EN","📗 R97"],["14:45","Hamza","FR","📗 R57"],["15:00","Ha Abdulhakim","DE","📗 R13"],["15:15","Ilyasreads","EN","📗 R100"],["15:30","Leilareads","FR","📗 R74"],["15:45","Ein Herz Voller Iman","DE","📗 R5"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R90"]],r2:[["18:00","Maryam","FR","📗 R56"],["18:15","Naimalist","DE","📗 R12"],["18:30","Hafsabdulhakim","EN","📗 R98"],["18:45","Hamza","FR","📗 R68"],["19:00","Ha Abdulhakim","DE","📗 R16"],["19:15","Ilyasreads","EN","📗 R1"],["19:30","Leilareads","FR","📗 R84"],["19:45","Ein Herz Voller Iman","DE","📗 R7"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R93"]]},
+{b:1,r1:[["14:00","Maryam","FR","📕 p141"],["14:15","Naimalist","DE","📕 p45"],["14:30","Hafsabdulhakim","EN","📗 R5"],["14:45","Hamza","FR","📕 p145"],["15:00","Ha Abdulhakim","DE","📕 p71"],["15:15","Ilyasreads","EN","📗 R11"],["15:30","Leilareads","FR","📕 p14"],["15:45","Ein Herz Voller Iman","DE","📗 R13"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R100"]],r2:[["18:00","Maryam","FR","📗 R93"],["18:15","Naimalist","DE","📗 R18"],["18:30","Hafsabdulhakim","EN","📗 R7"],["18:45","Hamza","FR","📗 R97"],["19:00","Ha Abdulhakim","DE","📗 R19"],["19:15","Ilyasreads","EN","📗 R12"],["19:30","Leilareads","FR","📗 R98"],["19:45","Ein Herz Voller Iman","DE","📗 R16"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R1"]]},
+{b:0,r1:[["14:00","Maryam","FR","📗 R11"],["14:15","Naimalist","DE","📗 R45"],["14:30","Hafsabdulhakim","EN","📗 R27"],["14:45","Hamza","FR","📗 R13"],["15:00","Ha Abdulhakim","DE","📗 Still Here"],["15:15","Ilyasreads","EN","📗 R36"],["15:30","Leilareads","FR","📗 R18"],["15:45","Ein Herz Voller Iman","DE","📗 R38"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R22"]],r2:[["18:00","Maryam","FR","📗 R12"],["18:15","Naimalist","DE","📗 R46"],["18:30","Hafsabdulhakim","EN","📗 R32"],["18:45","Hamza","FR","📗 R16"],["19:00","Ha Abdulhakim","DE","📗 R49"],["19:15","Ilyasreads","EN","📗 Overthinking"],["19:30","Leilareads","FR","📗 R19"],["19:45","Ein Herz Voller Iman","DE","📗 R43"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R26"]]},
+{b:1,r1:[["14:00","Maryam","FR","📕 p138"],["14:15","Naimalist","DE","📕 p14"],["14:30","Hafsabdulhakim","EN","📗 R38"],["14:45","Hamza","FR","📕 p141"],["15:00","Ha Abdulhakim","DE","📕 p45"],["15:15","Ilyasreads","EN","📗 R45"],["15:30","Leilareads","FR","📕 p145"],["15:45","Ein Herz Voller Iman","DE","📗 Still Here"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R36"]],r2:[["18:00","Maryam","FR","📗 R26"],["18:15","Naimalist","DE","📗 R51"],["18:30","Hafsabdulhakim","EN","📗 R43"],["18:45","Hamza","FR","📗 R27"],["19:00","Ha Abdulhakim","DE","📗 R56"],["19:15","Ilyasreads","EN","📗 R46"],["19:30","Leilareads","FR","📗 R32"],["19:45","Ein Herz Voller Iman","DE","📗 R49"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 Overthinking"]]},
+{b:0,r1:[["14:00","Maryam","FR","📗 R45"],["14:15","Naimalist","DE","📗 R100"],["14:30","Hafsabdulhakim","EN","📗 R74"],["14:45","Hamza","FR","📗 Still Here"],["15:00","Ha Abdulhakim","DE","📗 R5"],["15:15","Ilyasreads","EN","📗 R90"],["15:30","Leilareads","FR","📗 R51"],["15:45","Ein Herz Voller Iman","DE","📗 R97"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R57"]],r2:[["18:00","Maryam","FR","📗 R46"],["18:15","Naimalist","DE","📗 R1"],["18:30","Hafsabdulhakim","EN","📗 R84"],["18:45","Hamza","FR","📗 R49"],["19:00","Ha Abdulhakim","DE","📗 R7"],["19:15","Ilyasreads","EN","📗 R93"],["19:30","Leilareads","FR","📗 R56"],["19:45","Ein Herz Voller Iman","DE","📗 R98"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R68"]]},
+{b:1,r1:[["14:00","Maryam","FR","📕 p125"],["14:15","Naimalist","DE","📕 p150"],["14:30","Hafsabdulhakim","EN","📗 R97"],["14:45","Hamza","FR","📕 p138"],["15:00","Ha Abdulhakim","DE","📕 p14"],["15:15","Ilyasreads","EN","📗 R100"],["15:30","Leilareads","FR","📕 p141"],["15:45","Ein Herz Voller Iman","DE","📗 R5"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R90"]],r2:[["18:00","Maryam","FR","📗 R68"],["18:15","Naimalist","DE","📗 R11"],["18:30","Hafsabdulhakim","EN","📗 R98"],["18:45","Hamza","FR","📗 R74"],["19:00","Ha Abdulhakim","DE","📗 R12"],["19:15","Ilyasreads","EN","📗 R1"],["19:30","Leilareads","FR","📗 R84"],["19:45","Ein Herz Voller Iman","DE","📗 R7"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R93"]]},
+{b:0,r1:[["14:00","Maryam","FR","📗 R100"],["14:15","Naimalist","DE","📗 R36"],["14:30","Hafsabdulhakim","EN","📗 R18"],["14:45","Hamza","FR","📗 R5"],["15:00","Ha Abdulhakim","DE","📗 R38"],["15:15","Ilyasreads","EN","📗 R22"],["15:30","Leilareads","FR","📗 R11"],["15:45","Ein Herz Voller Iman","DE","📗 R27"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R13"]],r2:[["18:00","Maryam","FR","📗 R1"],["18:15","Naimalist","DE","📗 Overthinking"],["18:30","Hafsabdulhakim","EN","📗 R19"],["18:45","Hamza","FR","📗 R7"],["19:00","Ha Abdulhakim","DE","📗 R43"],["19:15","Ilyasreads","EN","📗 R26"],["19:30","Leilareads","FR","📗 R12"],["19:45","Ein Herz Voller Iman","DE","📗 R32"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R16"]]},
+{b:1,r1:[["14:00","Maryam","FR","📕 p119"],["14:15","Naimalist","DE","📕 p147"],["14:30","Hafsabdulhakim","EN","📗 R27"],["14:45","Hamza","FR","📕 p125"],["15:00","Ha Abdulhakim","DE","📕 p150"],["15:15","Ilyasreads","EN","📗 R36"],["15:30","Leilareads","FR","📕 p138"],["15:45","Ein Herz Voller Iman","DE","📗 R38"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R22"]],r2:[["18:00","Maryam","FR","📗 R16"],["18:15","Naimalist","DE","📗 R45"],["18:30","Hafsabdulhakim","EN","📗 R32"],["18:45","Hamza","FR","📗 R18"],["19:00","Ha Abdulhakim","DE","📗 R46"],["19:15","Ilyasreads","EN","📗 Overthinking"],["19:30","Leilareads","FR","📗 R19"],["19:45","Ein Herz Voller Iman","DE","📗 R43"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R26"]]},
+{b:0,r1:[["14:00","Maryam","FR","📗 R36"],["14:15","Naimalist","DE","📗 R90"],["14:30","Hafsabdulhakim","EN","📗 R51"],["14:45","Hamza","FR","📗 R38"],["15:00","Ha Abdulhakim","DE","📗 R97"],["15:15","Ilyasreads","EN","📗 R57"],["15:30","Leilareads","FR","📗 R45"],["15:45","Ein Herz Voller Iman","DE","📗 R74"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 Still Here"]],r2:[["18:00","Maryam","FR","📗 Overthinking"],["18:15","Naimalist","DE","📗 R93"],["18:30","Hafsabdulhakim","EN","📗 R56"],["18:45","Hamza","FR","📗 R43"],["19:00","Ha Abdulhakim","DE","📗 R98"],["19:15","Ilyasreads","EN","📗 R68"],["19:30","Leilareads","FR","📗 R46"],["19:45","Ein Herz Voller Iman","DE","📗 R84"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R49"]]},
+{b:1,r1:[["14:00","Maryam","FR","📕 p109"],["14:15","Naimalist","DE","📕 p143"],["14:30","Hafsabdulhakim","EN","📗 R74"],["14:45","Hamza","FR","📕 p119"],["15:00","Ha Abdulhakim","DE","📕 p147"],["15:15","Ilyasreads","EN","📗 R90"],["15:30","Leilareads","FR","📕 p125"],["15:45","Ein Herz Voller Iman","DE","📗 R97"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R57"]],r2:[["18:00","Maryam","FR","📗 R49"],["18:15","Naimalist","DE","📗 R100"],["18:30","Hafsabdulhakim","EN","📗 R84"],["18:45","Hamza","FR","📗 R51"],["19:00","Ha Abdulhakim","DE","📗 R1"],["19:15","Ilyasreads","EN","📗 R93"],["19:30","Leilareads","FR","📗 R56"],["19:45","Ein Herz Voller Iman","DE","📗 R98"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R68"]]},
+{b:0,r1:[["14:00","Maryam","FR","📗 R90"],["14:15","Naimalist","DE","📗 R22"],["14:30","Hafsabdulhakim","EN","📗 R11"],["14:45","Hamza","FR","📗 R97"],["15:00","Ha Abdulhakim","DE","📗 R27"],["15:15","Ilyasreads","EN","📗 R13"],["15:30","Leilareads","FR","📗 R100"],["15:45","Ein Herz Voller Iman","DE","📗 R18"],["16:00","Parce Que Je Veux Le Jannah","FR","📗 R5"]],r2:[["18:00","Maryam","FR","📗 R93"],["18:15","Naimalist","DE","📗 R26"],["18:30","Hafsabdulhakim","EN","📗 R12"],["18:45","Hamza","FR","📗 R98"],["19:00","Ha Abdulhakim","DE","📗 R32"],["19:15","Ilyasreads","EN","📗 R16"],["19:30","Leilareads","FR","📗 R1"],["19:45","Ein Herz Voller Iman","DE","📗 R19"],["20:00","Parce Que Je Veux Le Jannah","FR","📗 R7"]]}
+]},fati:{gap:"2h30 gap",r1t:"15:00 → 16:30",r2t:"19:00 → 20:30",daily:[
+{b:1,r1:[["15:00","Yassmine","FR","📕 p119"],["15:15","Meryem","DE","📕 p143"],["15:30","Because I Want Jannah","EN","📗 Still Here"],["15:45","H. Abdulhakim","FR","📗 R36"],["16:00","Hafsa Buecher","DE","📕 p147"],["16:15","Naimabookish","EN","📗 R51"],["16:30","Din Avant Dounya","FR","📗 R38"]],r2:[["19:00","Yassmine","FR","📕 p125"],["19:15","Meryem","DE","📗 R45"],["19:30","Because I Want Jannah","EN","📗 R49"],["19:45","H. Abdulhakim","FR","📗 Overthinking"],["20:00","Hafsa Buecher","DE","📗 R46"],["20:15","Naimabookish","EN","📗 R56"],["20:30","Din Avant Dounya","FR","📗 R43"]]},
+{b:0,r1:[["15:00","Yassmine","FR","📕 p69"],["15:15","Meryem","DE","📗 R97"],["15:30","Because I Want Jannah","EN","📗 R5"],["15:45","H. Abdulhakim","FR","📗 R74"],["16:00","Hafsa Buecher","DE","📗 R100"],["16:15","Naimabookish","EN","📗 R11"],["16:30","Din Avant Dounya","FR","📗 R90"]],r2:[["19:00","Yassmine","FR","📕 p70"],["19:15","Meryem","DE","📗 R98"],["19:30","Because I Want Jannah","EN","📗 R7"],["19:45","H. Abdulhakim","FR","📗 R84"],["20:00","Hafsa Buecher","DE","📗 R1"],["20:15","Naimabookish","EN","📗 R12"],["20:30","Din Avant Dounya","FR","📗 R93"]]},
+{b:1,r1:[["15:00","Yassmine","FR","📕 p109"],["15:15","Meryem","DE","📕 p130"],["15:30","Because I Want Jannah","EN","📗 R5"],["15:45","H. Abdulhakim","FR","📗 R90"],["16:00","Hafsa Buecher","DE","📕 p143"],["16:15","Naimabookish","EN","📗 R11"],["16:30","Din Avant Dounya","FR","📗 R97"]],r2:[["19:00","Yassmine","FR","📕 p119"],["19:15","Meryem","DE","📗 R100"],["19:30","Because I Want Jannah","EN","📗 R7"],["19:45","H. Abdulhakim","FR","📗 R93"],["20:00","Hafsa Buecher","DE","📗 R1"],["20:15","Naimabookish","EN","📗 R12"],["20:30","Din Avant Dounya","FR","📗 R98"]]},
+{b:0,r1:[["15:00","Yassmine","FR","📕 p109"],["15:15","Meryem","DE","📗 R27"],["15:30","Because I Want Jannah","EN","📗 R38"],["15:45","H. Abdulhakim","FR","📗 R18"],["16:00","Hafsa Buecher","DE","📗 R36"],["16:15","Naimabookish","EN","📗 R45"],["16:30","Din Avant Dounya","FR","📗 R22"]],r2:[["19:00","Yassmine","FR","📕 p119"],["19:15","Meryem","DE","📗 R32"],["19:30","Because I Want Jannah","EN","📗 R43"],["19:45","H. Abdulhakim","FR","📗 R19"],["20:00","Hafsa Buecher","DE","📗 Overthinking"],["20:15","Naimabookish","EN","📗 R46"],["20:30","Din Avant Dounya","FR","📗 R26"]]},
+{b:1,r1:[["15:00","Yassmine","FR","📕 p70"],["15:15","Meryem","DE","📕 p124"],["15:30","Because I Want Jannah","EN","📗 R38"],["15:45","H. Abdulhakim","FR","📗 R22"],["16:00","Hafsa Buecher","DE","📕 p130"],["16:15","Naimabookish","EN","📗 R45"],["16:30","Din Avant Dounya","FR","📗 R27"]],r2:[["19:00","Yassmine","FR","📕 p109"],["19:15","Meryem","DE","📗 R36"],["19:30","Because I Want Jannah","EN","📗 R43"],["19:45","H. Abdulhakim","FR","📗 R26"],["20:00","Hafsa Buecher","DE","📗 Overthinking"],["20:15","Naimabookish","EN","📗 R46"],["20:30","Din Avant Dounya","FR","📗 R32"]]},
+{b:0,r1:[["15:00","Yassmine","FR","📕 p125"],["15:15","Meryem","DE","📗 R74"],["15:30","Because I Want Jannah","EN","📗 R97"],["15:45","H. Abdulhakim","FR","📗 R51"],["16:00","Hafsa Buecher","DE","📗 R90"],["16:15","Naimabookish","EN","📗 R100"],["16:30","Din Avant Dounya","FR","📗 R57"]],r2:[["19:00","Yassmine","FR","📕 p138"],["19:15","Meryem","DE","📗 R84"],["19:30","Because I Want Jannah","EN","📗 R98"],["19:45","H. Abdulhakim","FR","📗 R56"],["20:00","Hafsa Buecher","DE","📗 R93"],["20:15","Naimabookish","EN","📗 R1"],["20:30","Din Avant Dounya","FR","📗 R68"]]},
+{b:1,r1:[["15:00","Yassmine","FR","📕 p69"],["15:15","Meryem","DE","📕 p114"],["15:30","Because I Want Jannah","EN","📗 R97"],["15:45","H. Abdulhakim","FR","📗 R57"],["16:00","Hafsa Buecher","DE","📕 p124"],["16:15","Naimabookish","EN","📗 R100"],["16:30","Din Avant Dounya","FR","📗 R74"]],r2:[["19:00","Yassmine","FR","📕 p70"],["19:15","Meryem","DE","📗 R90"],["19:30","Because I Want Jannah","EN","📗 R98"],["19:45","H. Abdulhakim","FR","📗 R68"],["20:00","Hafsa Buecher","DE","📗 R93"],["20:15","Naimabookish","EN","📗 R1"],["20:30","Din Avant Dounya","FR","📗 R84"]]},
+{b:0,r1:[["15:00","Yassmine","FR","📕 p141"],["15:15","Meryem","DE","📗 R18"],["15:30","Because I Want Jannah","EN","📗 R27"],["15:45","H. Abdulhakim","FR","📗 R11"],["16:00","Hafsa Buecher","DE","📗 R22"],["16:15","Naimabookish","EN","📗 R36"],["16:30","Din Avant Dounya","FR","📗 R13"]],r2:[["19:00","Yassmine","FR","📕 p145"],["19:15","Meryem","DE","📗 R19"],["19:30","Because I Want Jannah","EN","📗 R32"],["19:45","H. Abdulhakim","FR","📗 R12"],["20:00","Hafsa Buecher","DE","📗 R26"],["20:15","Naimabookish","EN","📗 Overthinking"],["20:30","Din Avant Dounya","FR","📗 R16"]]},
+{b:1,r1:[["15:00","Yassmine","FR","📕 p44"],["15:15","Meryem","DE","📕 p72"],["15:30","Because I Want Jannah","EN","📗 R27"],["15:45","H. Abdulhakim","FR","📗 R13"],["16:00","Hafsa Buecher","DE","📕 p114"],["16:15","Naimabookish","EN","📗 R36"],["16:30","Din Avant Dounya","FR","📗 R18"]],r2:[["19:00","Yassmine","FR","📕 p69"],["19:15","Meryem","DE","📗 R22"],["19:30","Because I Want Jannah","EN","📗 R32"],["19:45","H. Abdulhakim","FR","📗 R16"],["20:00","Hafsa Buecher","DE","📗 R26"],["20:15","Naimabookish","EN","📗 Overthinking"],["20:30","Din Avant Dounya","FR","📗 R19"]]},
+{b:0,r1:[["15:00","Yassmine","FR","📕 p14"],["15:15","Meryem","DE","📗 R51"],["15:30","Because I Want Jannah","EN","📗 R74"],["15:45","H. Abdulhakim","FR","📗 R45"],["16:00","Hafsa Buecher","DE","📗 R57"],["16:15","Naimabookish","EN","📗 R90"],["16:30","Din Avant Dounya","FR","📗 Still Here"]],r2:[["19:00","Yassmine","FR","📕 p44"],["19:15","Meryem","DE","📗 R56"],["19:30","Because I Want Jannah","EN","📗 R84"],["19:45","H. Abdulhakim","FR","📗 R46"],["20:00","Hafsa Buecher","DE","📗 R68"],["20:15","Naimabookish","EN","📗 R93"],["20:30","Din Avant Dounya","FR","📗 R49"]]},
+{b:1,r1:[["15:00","Yassmine","FR","📕 p14"],["15:15","Meryem","DE","📕 p71"],["15:30","Because I Want Jannah","EN","📗 R74"],["15:45","H. Abdulhakim","FR","📗 Still Here"],["16:00","Hafsa Buecher","DE","📕 p72"],["16:15","Naimabookish","EN","📗 R90"],["16:30","Din Avant Dounya","FR","📗 R51"]],r2:[["19:00","Yassmine","FR","📕 p44"],["19:15","Meryem","DE","📗 R57"],["19:30","Because I Want Jannah","EN","📗 R84"],["19:45","H. Abdulhakim","FR","📗 R49"],["20:00","Hafsa Buecher","DE","📗 R68"],["20:15","Naimabookish","EN","📗 R93"],["20:30","Din Avant Dounya","FR","📗 R56"]]},
+{b:0,r1:[["15:00","Yassmine","FR","📕 p69"],["15:15","Meryem","DE","📗 R11"],["15:30","Because I Want Jannah","EN","📗 R18"],["15:45","H. Abdulhakim","FR","📗 R100"],["16:00","Hafsa Buecher","DE","📗 R13"],["16:15","Naimabookish","EN","📗 R22"],["16:30","Din Avant Dounya","FR","📗 R5"]],r2:[["19:00","Yassmine","FR","📕 p70"],["19:15","Meryem","DE","📗 R12"],["19:30","Because I Want Jannah","EN","📗 R19"],["19:45","H. Abdulhakim","FR","📗 R1"],["20:00","Hafsa Buecher","DE","📗 R16"],["20:15","Naimabookish","EN","📗 R26"],["20:30","Din Avant Dounya","FR","📗 R7"]]},
+{b:1,r1:[["15:00","Yassmine","FR","📕 p145"],["15:15","Meryem","DE","📕 p45"],["15:30","Because I Want Jannah","EN","📗 R18"],["15:45","H. Abdulhakim","FR","📗 R5"],["16:00","Hafsa Buecher","DE","📕 p71"],["16:15","Naimabookish","EN","📗 R22"],["16:30","Din Avant Dounya","FR","📗 R11"]],r2:[["19:00","Yassmine","FR","📕 p14"],["19:15","Meryem","DE","📗 R13"],["19:30","Because I Want Jannah","EN","📗 R19"],["19:45","H. Abdulhakim","FR","📗 R7"],["20:00","Hafsa Buecher","DE","📗 R16"],["20:15","Naimabookish","EN","📗 R26"],["20:30","Din Avant Dounya","FR","📗 R12"]]},
+{b:0,r1:[["15:00","Yassmine","FR","📕 p109"],["15:15","Meryem","DE","📗 R45"],["15:30","Because I Want Jannah","EN","📗 R51"],["15:45","H. Abdulhakim","FR","📗 R36"],["16:00","Hafsa Buecher","DE","📗 Still Here"],["16:15","Naimabookish","EN","📗 R57"],["16:30","Din Avant Dounya","FR","📗 R38"]],r2:[["19:00","Yassmine","FR","📕 p119"],["19:15","Meryem","DE","📗 R46"],["19:30","Because I Want Jannah","EN","📗 R56"],["19:45","H. Abdulhakim","FR","📗 Overthinking"],["20:00","Hafsa Buecher","DE","📗 R49"],["20:15","Naimabookish","EN","📗 R68"],["20:30","Din Avant Dounya","FR","📗 R43"]]}
+]}};
 
-            // Post 1
-            items.push(createItem(
-              `${isoDate}-${accIdx}-1`,
-              times.post1,
-              account.region,
-              account.name,
-              page1,
-              quote1.id
-            ));
+let cProf=null,cDI=0,cView='daily';
 
-            // Post 2
-            items.push(createItem(
-              `${isoDate}-${accIdx}-2`,
-              times.post2,
-              account.region,
-              account.name,
-              page2,
-              quote2.id
-            ));
-          }
+function selectProfile(p){
+  cProf=p;cDI=0;
+  document.getElementById('profile-screen').style.display='none';
+  document.getElementById('schedule-screen').style.display='block';
+  const n=p[0].toUpperCase()+p.slice(1);
+  document.getElementById('topBarTitle').textContent=n+"'s Schedule";
+  document.getElementById('profileName').textContent=n;
+  document.getElementById('profileDot').className='profile-dot '+p;
+  document.getElementById('viewToggleContainer').style.display=p==='mouad'?'':'none';
+  renderPills();renderDay(0);
+}
 
-          // Sort by time
-          items.sort((a, b) => a.time.localeCompare(b.time));
+function goBack(){
+  document.getElementById('profile-screen').style.display='';
+  document.getElementById('schedule-screen').style.display='none';
+  cProf=null;switchView('daily');
+}
 
-          schedule.push({
-            date: isoDate,
-            displayDate,
-            items
-          });
+let otherPage=0;
+function renderPills(){
+  const el=document.getElementById('dayPills');el.innerHTML='';
+  const dayNames=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
-          currentDate.setDate(currentDate.getDate() + 1);
-          postingDayIndex++;
-        }
+  for(let i=0;i<6&&i<AD.length;i++){
+    const d=AD[i];
+    const pill=document.createElement('button');
+    pill.className='day-pill'+(i===0?' active '+cProf:'');
+    const label=i===0?'Today':dayNames[d.getDay()];
+    pill.innerHTML=`<span class="pill-date">${label}</span><span class="pill-dow">${fmtShort(d)}</span>`;
+    pill.onclick=()=>{closeDropdown();renderDay(i)};
+    el.appendChild(pill);
+  }
 
-        return schedule;
-      };
+  // Other days pill with dropdown
+  const otherWrap=document.createElement('div');
+  otherWrap.style.cssText='position:relative;display:inline-flex';
+  const otherPill=document.createElement('button');
+  otherPill.className='day-pill other-pill';
+  otherPill.id='otherPill';
+  otherPill.innerHTML=`<span class="pill-icon">📅</span><span class="pill-date">Other Days</span>`;
+  otherPill.onclick=(e)=>{e.stopPropagation();toggleDropdown()};
+  otherWrap.appendChild(otherPill);
 
-      const SCHEDULE_DATA = generateSchedule();
+  // Dropdown
+  const dd=document.createElement('div');
+  dd.className='other-dropdown';
+  dd.id='otherDropdown';
+  dd.onclick=(e)=>e.stopPropagation();
+  otherWrap.appendChild(dd);
+  el.appendChild(otherWrap);
 
-      // ============== POST ITEM COMPONENT ==============
-      const PostItem = ({ item, isPast = false }) => {
-        const isFrance = item.region === 'France';
-        
-        const containerClasses = isPast
-          ? 'border-l-4 border-red-300 bg-gradient-to-r from-red-50/50 to-white/50 text-red-800 opacity-75'
-          : isFrance
-            ? 'border-l-4 border-blue-500 bg-gradient-to-r from-blue-50 to-white text-blue-900'
-            : 'border-l-4 border-amber-500 bg-gradient-to-r from-amber-50 to-white text-amber-900';
+  // Overlay
+  if(!document.getElementById('ddOverlay')){
+    const ov=document.createElement('div');
+    ov.className='other-dropdown-overlay';
+    ov.id='ddOverlay';
+    ov.onclick=closeDropdown;
+    document.body.appendChild(ov);
+  }
 
-        const iconColor = isPast ? 'text-red-400' : isFrance ? 'text-blue-500' : 'text-amber-500';
-        const timeBg = isPast ? 'bg-red-100/50 text-red-600' : isFrance ? 'bg-blue-100 text-blue-700' : 'bg-amber-100 text-amber-700';
+  otherPage=0;
+  renderDropdownContent();
+}
 
-        return (
-          <div className={`relative p-5 rounded-r-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-0.5 mb-2 ${containerClasses}`}>
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              
-              <div className="flex items-center gap-4">
-                <div className={`px-3 py-1.5 rounded-lg text-base font-black flex items-center gap-2 shadow-sm ${timeBg}`}>
-                  <Icon name="Clock" size={16} strokeWidth={3} />
-                  {item.time}
-                </div>
-                <div className="flex items-center gap-2 text-base font-bold opacity-80">
-                  <Icon name="Files" size={20} />
-                  <span>{item.quoteId}</span>
-                </div>
-              </div>
+function renderDropdownContent(){
+  const dd=document.getElementById('otherDropdown');
+  if(!dd)return;
+  const startIdx=6+otherPage*10;
+  const days=[];
+  for(let i=startIdx;i<startIdx+10&&i<AD.length;i++) days.push(i);
+  const dayNames=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const canPrev=otherPage>0;
+  const canNext=startIdx+10<AD.length;
 
-              <div className="flex-1 sm:text-center font-bold text-xl">
-                {item.account}
-                <span className="text-sm font-semibold block opacity-60 mt-1">
-                  حساب {item.region === 'France' ? 'فرنسا 🇫🇷' : 'ألمانيا 🇩🇪'}
-                </span>
-              </div>
+  const startD=AD[days[0]],endD=AD[days[days.length-1]];
+  const rangeLabel=fmtShort(startD)+' – '+fmtShort(endD);
 
-              <div className={`flex items-center gap-2 text-lg font-bold ${isPast ? 'bg-red-50/50' : 'bg-white/70'} px-4 py-1.5 rounded-full w-fit sm:w-auto shadow-sm border border-white/50`}>
-                <span className={iconColor}><Icon name="BookOpen" size={18} strokeWidth={2.5} /></span>
-                <span>{item.contentRef}</span>
-              </div>
-            </div>
+  dd.innerHTML=`
+    <div class="other-dropdown-header">
+      <span>${rangeLabel}</span>
+      <div class="other-dropdown-nav">
+        <button onclick="otherPageNav(-1)" ${canPrev?'':'disabled style="opacity:.3;pointer-events:none"'}>‹</button>
+        <button onclick="otherPageNav(1)" ${canNext?'':'disabled style="opacity:.3;pointer-events:none"'}>›</button>
+      </div>
+    </div>
+    <div class="other-dropdown-grid">
+      ${days.map(idx=>{
+        const d=AD[idx];
+        const di=dayIdx(d);
+        const isB=D[cProf].daily[di].b;
+        const isSel=idx===cDI;
+        return `<button class="other-day-btn${isB?' od-book':''}${isSel?' od-selected':''}" onclick="pickOtherDay(${idx})">
+          <div class="od-num">${d.getDate()}</div>
+          <div class="od-info">
+            <span class="od-dow">${dayNames[d.getDay()]}${isB?' 📕':''}</span>
+            <span class="od-month">${MN[d.getMonth()]} ${d.getFullYear()}</span>
           </div>
-        );
-      };
+        </button>`;
+      }).join('')}
+    </div>
+    <div class="other-dropdown-footer">
+      <button class="other-datepicker-btn">
+        📅 Pick exact date
+        <input type="date" min="2026-02-12" max="2026-03-31" onchange="pickExactDate(this.value)">
+      </button>
+    </div>`;
+  
+  // Add/remove fati mode class
+  dd.classList.toggle('fati-mode',cProf==='fati');
+}
 
-      // ============== DAY CARD COMPONENT ==============
-      const DayCard = ({ day, filterRegion, isPast = false, isToday = false }) => {
-        if (day.isRestDay) {
-          return (
-            <div className={`${isPast ? 'bg-red-100/50 border-red-200' : 'bg-amber-100 border-amber-300'} rounded-3xl shadow-md border-2 p-12 flex flex-col items-center justify-center transform transition-transform hover:scale-[1.02]`}>
-              <h3 className={`text-3xl font-black ${isPast ? 'text-red-700' : 'text-amber-700'} mb-6`}>{day.displayDate}</h3>
-              <div className={`${isPast ? 'bg-red-50/80 text-red-600 border-red-200' : 'bg-yellow-50 text-amber-600 border-amber-300'} backdrop-blur-sm px-12 py-5 rounded-full text-3xl font-bold shadow-sm border`}>
-                يوم راحة 😴
-              </div>
-            </div>
-          );
-        }
+function otherPageNav(dir){
+  otherPage+=dir;
+  if(otherPage<0)otherPage=0;
+  renderDropdownContent();
+}
 
-        const filteredItems = day.items.filter(
-          (item) => filterRegion === 'All' || item.region === filterRegion
-        );
+function toggleDropdown(){
+  const dd=document.getElementById('otherDropdown');
+  const ov=document.getElementById('ddOverlay');
+  const isOpen=dd.classList.contains('open');
+  if(isOpen){closeDropdown()}
+  else{dd.classList.add('open');ov.classList.add('open');renderDropdownContent()}
+}
 
-        if (filteredItems.length === 0) return null;
+function closeDropdown(){
+  const dd=document.getElementById('otherDropdown');
+  const ov=document.getElementById('ddOverlay');
+  if(dd)dd.classList.remove('open');
+  if(ov)ov.classList.remove('open');
+}
 
-        // Split items into Post 1 (early times) and Post 2 (late times)
-        const post1Items = filteredItems.filter(item => 
-          item.time === '16:00' || item.time === '16:20' || item.time === '17:00' || item.time === '17:20'
-        );
-        const post2Items = filteredItems.filter(item => 
-          item.time === '19:00' || item.time === '19:20' || item.time === '20:00' || item.time === '20:20'
-        );
+function pickOtherDay(idx){
+  closeDropdown();
+  renderDay(idx);
+}
 
-        const headerBg = isPast 
-          ? 'bg-red-100 border-red-200' 
-          : isToday 
-            ? 'bg-gradient-to-r from-indigo-500 to-blue-500 border-indigo-300' 
-            : 'bg-slate-50 border-slate-200';
-        
-        const headerText = isPast 
-          ? 'text-red-700' 
-          : isToday 
-            ? 'text-white' 
-            : 'text-slate-700';
+function pickExactDate(val){
+  const pts=val.split('-');
+  const picked=new Date(+pts[0],+pts[1]-1,+pts[2]);
+  const idx=dateToIdx(picked);
+  if(idx>=0&&idx<AD.length){
+    closeDropdown();
+    renderDay(idx);
+  }
+}
 
-        return (
-          <div className={`bg-white rounded-2xl shadow-lg border ${isPast ? 'border-red-200' : 'border-slate-100'} overflow-hidden hover:border-slate-300 transition-colors duration-300`}>
-            <div className={`${headerBg} border-b px-6 py-5 flex items-center justify-center gap-3`}>
-              <span className={isPast ? 'text-red-400' : isToday ? 'text-white/80' : 'text-slate-400'}>
-                <Icon name="Calendar" size={24} />
-              </span>
-              <h3 className={`text-xl font-black ${headerText} text-center`}>
-                {day.displayDate}
-                {isToday && <span className="mr-2 text-sm bg-white/20 px-3 py-1 rounded-full">اليوم</span>}
-                {isPast && <span className="mr-2 text-sm bg-red-200/50 px-3 py-1 rounded-full">منتهي</span>}
-              </h3>
-            </div>
+function renderDay(i){
+  cDI=i;const d=AD[i];const di=dayIdx(d);const data=D[cProf];const day=data.daily[di];
 
-            <div className={`p-5 ${isPast ? 'bg-red-50/30' : 'bg-slate-50/50'}`}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Post 1 Column - Right side in RTL */}
-                <div className="flex flex-col bg-gradient-to-b from-emerald-100 to-emerald-50 rounded-2xl overflow-hidden border-2 border-emerald-200 shadow-md">
-                  <div className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-center py-4 font-bold text-xl">
-                    المنشور الأول
-                  </div>
-                  <div className="flex flex-col gap-3 p-4">
-                    {post1Items.map((item) => (
-                      <PostItem key={item.id} item={item} isPast={isPast} />
-                    ))}
-                  </div>
-                </div>
-                
-                {/* Post 2 Column - Left side in RTL */}
-                <div className="flex flex-col bg-gradient-to-b from-purple-100 to-purple-50 rounded-2xl overflow-hidden border-2 border-purple-200 shadow-md">
-                  <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center py-4 font-bold text-xl">
-                    المنشور الثاني
-                  </div>
-                  <div className="flex flex-col gap-3 p-4">
-                    {post2Items.map((item) => (
-                      <PostItem key={item.id} item={item} isPast={isPast} />
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        );
-      };
+  // Update pill active states
+  const pills=document.getElementById('dayPills').children;
+  for(let j=0;j<pills.length;j++){
+    const p=pills[j];
+    if(p.classList)p.classList.remove('active','mouad','fati');
+    // Also handle the wrapper div for other pill
+    const inner=p.querySelector&&p.querySelector('.day-pill');
+    if(inner)inner.classList.remove('active','mouad','fati');
+  }
+  if(i<6){
+    pills[i].classList.add('active',cProf);
+    const op=document.getElementById('otherPill');
+    if(op){op.classList.remove('active','mouad','fati');op.querySelector('.pill-date').textContent='Other Days'}
+  }else{
+    const op=document.getElementById('otherPill');
+    if(op){op.classList.add('active',cProf);op.querySelector('.pill-date').textContent=fmtShort(d)}
+  }
 
-      // ============== PAST DAYS DROPDOWN ==============
-      const PastDaysDropdown = ({ pastDays, filterRegion }) => {
-        const [isOpen, setIsOpen] = useState(false);
+  const c=document.getElementById('scheduleContent');
+  const bl=day.b?'📕 Muslima Day':'📗 Reminders Only';
+  c.innerHTML=`<div class="day-title-row"><div class="day-title">${fmtLong(d)}</div><div class="day-subtitle">${bl} · Cycle Day ${di+1}</div></div>
+  <div class="rounds-grid">
+    <div class="round-col">
+      <div class="round-section"><div class="round-header"><div class="round-label">Round 1 — Post 1</div><div class="round-time-range">${data.r1t}</div></div><div class="post-list">${day.r1.map(pc).join('')}</div></div>
+    </div>
+    <div class="round-col">
+      <div class="round-section"><div class="round-header"><div class="round-label">Round 2 — Post 2</div><div class="round-time-range">${data.r2t}</div></div><div class="post-list">${day.r2.map(pc).join('')}</div></div>
+    </div>
+  </div>`;
+}
 
-        if (pastDays.length === 0) return null;
+function pc([t,a,l,c]){
+  const b1=c.includes('📕');
+  let bc;
+  if(b1) bc='muslima';
+  else if(l==='DE') bc='iman';
+  else if(l==='EN') bc='jannah-en';
+  else bc='jannah-fr';
+  const lbl=fmtContent(c,l);
+  const flag=FLAGS[l]||'';
+  return `<div class="post-card"><div class="post-time">${t}</div><div class="post-account"><span class="account-flag">${flag}</span>${a}</div><span class="content-badge ${bc}">${lbl}</span></div>`;
+}
 
-        return (
-          <div className="mb-8">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-2xl shadow-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 font-bold text-lg"
-            >
-              <Icon name="History" size={24} />
-              <span>الأيام السابقة ({pastDays.length})</span>
-              <Icon name={isOpen ? "ChevronUp" : "ChevronDown"} size={24} />
-            </button>
-            
-            {isOpen && (
-              <div className="mt-4 space-y-6 p-4 bg-red-50/50 rounded-2xl border-2 border-red-200 border-dashed">
-                {pastDays.map((day) => (
-                  <DayCard 
-                    key={day.date} 
-                    day={day} 
-                    filterRegion={filterRegion}
-                    isPast={true}
-                  />
-                ))}
-              </div>
-            )}
-          </div>
-        );
-      };
+function switchView(v){
+  cView=v;
+  ['daily','analytics'].forEach(x=>{
+    const btn=document.getElementById(x+'Btn');
+    if(btn)btn.className='view-btn'+(v===x?' active':'');
+    document.getElementById(x+'-view').style.display=v===x?'block':'none';
+  });
+  if(v==='analytics')renderAnalytics();
+}
 
-      // ============== FILTERS COMPONENT ==============
-      const Filters = ({ currentRegion, setRegion, currentDuration, setDuration }) => {
-        const btnBase = "flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all duration-300 shadow-sm text-base sm:text-lg";
-        const activeBase = "ring-2 ring-offset-2 ring-offset-slate-50 transform scale-105 shadow-md";
-        const inactiveBase = "bg-white text-slate-500 hover:bg-slate-100 border border-slate-200";
+function renderAnalytics(){
+  const dv=document.getElementById('analyticsDate').value;const pts=dv.split('-');
+  const upTo=new Date(+pts[0],+pts[1]-1,+pts[2]);
 
-        return (
-          <div className="flex flex-col items-center gap-6 mb-10">
-            
-            {/* Region Filters */}
-            <div className="flex flex-wrap justify-center gap-3">
-              <button
-                onClick={() => setRegion('All')}
-                className={`${btnBase} ${
-                  currentRegion === 'All'
-                    ? `${activeBase} bg-slate-800 text-white ring-slate-800`
-                    : inactiveBase
-                }`}
-              >
-                <Icon name="Filter" size={20} />
-                الكل
-              </button>
+  // First: scan ALL data to find which reminders & pages exist in the schedule
+  const allRem=new Set(),allPgFR=new Set(),allPgDE=new Set();
+  AD.forEach(d=>{const di=dayIdx(d);
+    ['mouad','fati'].forEach(pr=>{const day=D[pr].daily[di];
+      [...day.r1,...day.r2].forEach(([t,a,l,c])=>{
+        const k=cKey(c);
+        if(c.includes('📕')){if(l==='FR')allPgFR.add(k);else if(l==='DE')allPgDE.add(k)}
+        else allRem.add(k);
+      })});
+  });
 
-              <button
-                onClick={() => setRegion('France')}
-                className={`${btnBase} ${
-                  currentRegion === 'France'
-                    ? `${activeBase} bg-blue-500 text-white ring-blue-500`
-                    : inactiveBase
-                }`}
-              >
-                <Icon name="MapPin" size={20} />
-                فرنسا 🇫🇷
-              </button>
+  // Now count only up to selected date
+  const rmC={},pgFR={},pgDE={};
+  allRem.forEach(k=>rmC[k]=0);
+  allPgFR.forEach(k=>pgFR[k]=0);
+  allPgDE.forEach(k=>pgDE[k]=0);
 
-              <button
-                onClick={() => setRegion('Germany')}
-                className={`${btnBase} ${
-                  currentRegion === 'Germany'
-                    ? `${activeBase} bg-amber-500 text-white ring-amber-500`
-                    : inactiveBase
-                }`}
-              >
-                <Icon name="MapPin" size={20} />
-                ألمانيا 🇩🇪
-              </button>
-            </div>
+  const posts=[];
+  AD.forEach(d=>{if(d>upTo)return;const di=dayIdx(d);
+    ['mouad','fati'].forEach(pr=>{const day=D[pr].daily[di];
+      [...day.r1,...day.r2].forEach(([t,a,l,c])=>{
+        posts.push({c,pr,l});
+        const k=cKey(c);
+        if(c.includes('📕')){if(l==='FR')pgFR[k]++;else if(l==='DE')pgDE[k]++}
+        else rmC[k]++;
+      })});
+  });
 
-            {/* Visual Divider */}
-            <div className="w-16 h-1 bg-slate-200 rounded-full opacity-50"></div>
+  const td=AD.filter(d=>d<=upTo).length,tp=posts.length,mp=posts.filter(p=>p.pr==='mouad').length,fp=tp-mp;
+  document.getElementById('analyticsStats').innerHTML=`
+    <div class="stat-card"><div class="stat-value">${td}</div><div class="stat-label">Days</div></div>
+    <div class="stat-card"><div class="stat-value">${tp.toLocaleString()}</div><div class="stat-label">Total Posts</div></div>
+    <div class="stat-card"><div class="stat-value" style="color:var(--mouad-accent)">${mp.toLocaleString()}</div><div class="stat-label">Mouad's Posts</div></div>
+    <div class="stat-card"><div class="stat-value" style="color:var(--fati-accent)">${fp.toLocaleString()}</div><div class="stat-label">Fati's Posts</div></div>`;
 
-            {/* Duration Filters */}
-            <div className="flex flex-wrap justify-center gap-3">
-              <button
-                onClick={() => setDuration('3days')}
-                className={`${btnBase} ${
-                  currentDuration === '3days'
-                    ? `${activeBase} bg-emerald-500 text-white ring-emerald-500`
-                    : inactiveBase
-                }`}
-              >
-                <Icon name="Calendar" size={20} />
-                3 أيام
-              </button>
+  // Sort reminders: numbered first, then specials
+  const rKeys=[...allRem].sort((a,b)=>{
+    const na=parseInt(a.replace(/\D/g,''))||999;
+    const nb=parseInt(b.replace(/\D/g,''))||999;
+    if(na!==nb)return na-nb;return a.localeCompare(b);
+  });
+  document.getElementById('reminderGrid').innerHTML=rKeys.map(k=>{
+    const cnt=rmC[k]||0;
+    let label;
+    if(k==='Overthinking') label='Jannah 📗 Overthinking';
+    else if(k==='Still Here') label='Jannah 📗 Still Here';
+    else label='Jannah 📗 '+k;
+    return `<div class="reminder-row"><span class="reminder-name">${label}</span><span class="reminder-count ${cnt>0?'posted':'zero'}">${cnt}</span></div>`;
+  }).join('');
 
-              <button
-                onClick={() => setDuration('7days')}
-                className={`${btnBase} ${
-                  currentDuration === '7days'
-                    ? `${activeBase} bg-emerald-600 text-white ring-emerald-600`
-                    : inactiveBase
-                }`}
-              >
-                <Icon name="CalendarDays" size={20} />
-                أسبوع
-              </button>
+  // Sort pages by number - French
+  const pKeysFR=[...allPgFR].sort((a,b)=>(parseInt(a.replace(/\D/g,''))||0)-(parseInt(b.replace(/\D/g,''))||0));
+  document.getElementById('pageGridFR').innerHTML=pKeysFR.map(k=>{
+    const cnt=pgFR[k]||0;
+    const lbl='Muslima 📕 Page '+k.replace('p','');
+    return `<div class="reminder-row"><span class="reminder-name">${lbl}</span><span class="reminder-count ${cnt>0?'posted-book1':'zero'}">${cnt}</span></div>`;
+  }).join('');
 
-              <button
-                onClick={() => setDuration('all')}
-                className={`${btnBase} ${
-                  currentDuration === 'all'
-                    ? `${activeBase} bg-indigo-600 text-white ring-indigo-600`
-                    : inactiveBase
-                }`}
-              >
-                <Icon name="Infinity" size={20} />
-                كل الجدول
-              </button>
-            </div>
+  // Sort pages by number - German
+  const pKeysDE=[...allPgDE].sort((a,b)=>(parseInt(a.replace(/\D/g,''))||0)-(parseInt(b.replace(/\D/g,''))||0));
+  document.getElementById('pageGridDE').innerHTML=pKeysDE.map(k=>{
+    const cnt=pgDE[k]||0;
+    const lbl='Muslima 📕 Page '+k.replace('p','');
+    return `<div class="reminder-row"><span class="reminder-name">${lbl}</span><span class="reminder-count ${cnt>0?'posted-book1':'zero'}">${cnt}</span></div>`;
+  }).join('');
+}
 
-          </div>
-        );
-      };
-
-      // ============== QUOTE REFERENCE TABLE ==============
-      const QuoteReference = () => {
-        const [isOpen, setIsOpen] = useState(false);
-
-        return (
-          <div className="mb-8">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="w-full flex items-center justify-center gap-3 px-6 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl shadow-lg hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 font-bold text-lg"
-            >
-              <Icon name="BookOpen" size={24} />
-              <span>مرجع الاقتباسات (14 اقتباس)</span>
-              <Icon name={isOpen ? "ChevronUp" : "ChevronDown"} size={24} />
-            </button>
-            
-            {isOpen && (
-              <div className="mt-4 p-6 bg-white rounded-2xl border-2 border-indigo-200 shadow-lg">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {QUOTES.map((quote, idx) => (
-                    <div key={quote.id} className="flex items-center justify-between p-4 bg-gradient-to-r from-slate-50 to-white rounded-xl border border-slate-200">
-                      <span className="font-black text-lg text-indigo-600">{quote.id}</span>
-                      <div className="flex gap-4 text-sm">
-                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-bold">🇫🇷 صفحة {quote.fr}</span>
-                        <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full font-bold">🇩🇪 صفحة {quote.de}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        );
-      };
-
-      // ============== MAIN APP COMPONENT ==============
-      const App = () => {
-        const [regionFilter, setRegionFilter] = useState('All');
-        const [durationFilter, setDurationFilter] = useState('3days');
-
-        const { pastDays, currentDays, todayDate } = useMemo(() => {
-          const today = new Date();
-          today.setHours(0, 0, 0, 0);
-          
-          const todayStr = today.toISOString().split('T')[0];
-
-          const todayIndex = SCHEDULE_DATA.findIndex(d => d.date === todayStr);
-          
-          if (todayIndex === -1) {
-            const firstDayDate = new Date(SCHEDULE_DATA[0]?.date);
-            if (today < firstDayDate) {
-              let daysToShow = 3;
-              if (durationFilter === '7days') daysToShow = 7;
-              else if (durationFilter === 'all') daysToShow = SCHEDULE_DATA.length;
-              
-              return {
-                pastDays: [],
-                currentDays: SCHEDULE_DATA.slice(0, daysToShow),
-                todayDate: todayStr
-              };
-            }
-            return {
-              pastDays: SCHEDULE_DATA,
-              currentDays: [],
-              todayDate: todayStr
-            };
-          }
-
-          const past = SCHEDULE_DATA.slice(0, todayIndex);
-          
-          let daysToShow = 3;
-          if (durationFilter === '7days') daysToShow = 7;
-          else if (durationFilter === 'all') daysToShow = SCHEDULE_DATA.length - todayIndex;
-          
-          const current = SCHEDULE_DATA.slice(todayIndex, todayIndex + daysToShow);
-
-          return {
-            pastDays: past,
-            currentDays: current,
-            todayDate: todayStr
-          };
-        }, [durationFilter]);
-
-        const filteredCurrentDays = currentDays.filter(day => {
-          if (day.isRestDay) return true;
-          if (regionFilter === 'All') return true;
-          return day.items.some(item => item.region === regionFilter);
-        });
-
-        const filteredPastDays = [...pastDays].filter(day => {
-          if (day.isRestDay) return true;
-          if (regionFilter === 'All') return true;
-          return day.items.some(item => item.region === regionFilter);
-        }).reverse();
-
-        return (
-          <div className="min-h-screen bg-slate-50/50 pb-20 relative z-10">
-            
-            <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white py-16 px-4 mb-8 overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-              <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/4"></div>
-              
-              <div className="relative container mx-auto text-center z-10">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4 tracking-tight drop-shadow-lg">
-                  جدول نشر <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-pink-500">TikTok</span>
-                </h1>
-                
-                <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                  جدول النشر اليومي
-                </p>
-              </div>
-            </div>
-
-            <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-              
-              <Filters 
-                currentRegion={regionFilter} 
-                setRegion={setRegionFilter}
-                currentDuration={durationFilter}
-                setDuration={setDurationFilter}
-              />
-
-              {/* Past Days Dropdown */}
-              <PastDaysDropdown 
-                pastDays={filteredPastDays} 
-                filterRegion={regionFilter} 
-              />
-
-              {/* Current Days */}
-              <div className="grid grid-cols-1 gap-8">
-                {filteredCurrentDays.length > 0 ? (
-                  filteredCurrentDays.map((day) => (
-                    <DayCard 
-                      key={day.date} 
-                      day={day} 
-                      filterRegion={regionFilter}
-                      isToday={day.date === todayDate}
-                    />
-                  ))
-                ) : (
-                  <div className="text-center py-20 col-span-full">
-                    <span className="mx-auto text-slate-300 mb-4 block"><Icon name="CalendarDays" size={48} /></span>
-                    <p className="text-slate-500 text-lg">لا توجد منشورات لهذا الفلتر</p>
-                  </div>
-                )}
-              </div>
-
-            </div>
-          </div>
-        );
-      };
-
-      // ============== RENDER ==============
-      const root = ReactDOM.createRoot(document.getElementById('root'));
-      root.render(<App />);
-    </script>
-  </body>
+document.addEventListener('keydown',e=>{if(!cProf||cView!=='daily')return;if(e.key==='ArrowRight'&&cDI<AD.length-1)renderDay(cDI+1);if(e.key==='ArrowLeft'&&cDI>0)renderDay(cDI-1)});
+</script>
+</body>
 </html>
+
+
